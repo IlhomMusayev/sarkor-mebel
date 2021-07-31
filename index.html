@@ -12,8 +12,9 @@
     <title>Sarkor</title>
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/scss/main.css">
+    <link rel="stylesheet" href="js/aos-master/dist/aos.css">
 
 </head>
 
@@ -38,13 +39,70 @@
                 <li>
                     <a href="#" class="header__nav__list__item">Сервис</a>
                 </li>
+                <li>
+                    <a href="#" class="header__nav__list__item">Каталог</a>
+                </li>
             </ul>
+        </nav>
+
+        <nav class="header__right">
+            <div class="header__right__wrapper">
+                <ul class="header__right__icons">
+                    <li class="header__right__icons__item">
+                        <a type="button">
+                            <img src="images/icons/menu.svg" alt="menu">
+                        </a>
+                    </li>
+                    <li class="header__right__icons__item">
+                        <a href="#">
+                            <img src="images/icons/User.svg" alt="user">
+                        </a>
+                    </li>
+                    <li class="header__right__icons__item">
+                        <a href="#" type="button">
+                            <img src="images/icons/basket.svg" alt="basket">
+                        </a>
+                        <span class="header__right__icons__item__badge">
+                            <p>3</p>
+                        </span>
+                    </li>
+                </ul>
+                <div class="header__right__phone">
+                    <a href="#">
+                        <img src="images/icons/Phone.svg" alt="phone">
+                    </a>
+                </div>
+                <ul class="header__right__socials">
+                    <li class="header__right__socials__item">
+                        <a href="#" title="facebook">
+                            <img src="images/icons/Facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="header__right__socials__item">
+                        <a href="#" title="instagram">
+                            <img src="images/icons/Instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="header__right__socials__item" title="telegram">
+                        <a href="#">
+                            <img src="images/icons/Telegram.svg" alt="telegram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
     </header>
 
-    <section id="home"></section>
+    <section id="home">
 
+
+    </section>
+
+    <script src="js/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
     <script src="./js/bootstrap.js"></script>
 </body>
 
