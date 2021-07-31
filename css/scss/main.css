@@ -1,0 +1,21 @@
+.s__header {
+  height: 96px;
+  background-color: #0a53be;
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+}
+.header__nav__list {
+  list-style: none;
+}
+.header__nav__list__item {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=main.css.map */

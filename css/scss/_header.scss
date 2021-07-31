@@ -1,0 +1,27 @@
+@import "colors";
+
+.s {
+  &__header {
+    height: 96px;
+    background-color: #0a53be;
+    position: relative;
+  }
+}
+
+.header {
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+  }
+  &__nav {
+    &__list {
+      list-style: none;
+      &__item {
+        text-decoration: none;
+        color: $white-color;
+      }
+    }
+  }
+}
