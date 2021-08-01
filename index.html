@@ -20,6 +20,13 @@
 
 <body>
 
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+
     <header class="s__header">
 
         <div class="header__logo">
@@ -94,14 +101,71 @@
 
     </header>
 
-    <section id="home">
-
-
+    <section id="home" class="s__home">
+        <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay"></div>
+                    <img src="images/background.png" class="d-block w-100" alt="background">
+                    <div class="carousel__caption">
+                        <h1>Мебель премиум-класса.</h1>
+                        <a href="#">
+                            Посмотреть
+                            <img src="images/icons/array-small.svg" alt="array">
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="images/background2.jpg" class="d-block w-100" alt="background">
+                    <div class="carousel__caption">
+                        <h1>Second slide label</h1>
+                        <a href="#">
+                            Посмотреть
+                            <img src="images/icons/array-small.svg" alt="array">
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="images/background3.jpg" class="d-block w-100" alt="background">
+                    <div class="carousel__caption">
+                        <h1>Third slide label</h1>
+                        <a href="#">
+                            Посмотреть
+                            <img src="images/icons/array-small.svg" alt="array">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__controller__wrapper">
+                <button class="carousel__controller btn" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                    <img src="images/icons/arrow.svg" alt="left">
+                </button>
+                <button class="carousel__controller btn" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                    <img src="images/icons/arrow.svg" alt="right" style="transform: rotate(180deg)">
+                </button>
+            </div>
+        </div>
+        <div class="mousewheel">
+            <a href="#categories">
+                <img src="images/icons/Scroll.svg" alt="scroll">
+            </a>
+        </div>
     </section>
 
     <script src="js/aos-master/dist/aos.js"></script>
     <script>
         AOS.init()
+    </script>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 3000);
+        }
     </script>
     <script src="./js/bootstrap.js"></script>
 </body>

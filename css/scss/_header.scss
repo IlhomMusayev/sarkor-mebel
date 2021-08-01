@@ -3,8 +3,10 @@
 .s {
   &__header {
     height: 96px;
-    background-color: #0a53be;
-    position: relative;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 100;
   }
 }
 
@@ -14,6 +16,9 @@
     top: 50%;
     left: 80px;
     transform: translateY(-50%);
+    a {
+      display: block;
+    }
   }
   &__nav {
     position: absolute;
@@ -42,10 +47,11 @@
   &__right {
     position: absolute;
     right: 0;
-    background-color: #0c4128;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(8px);
     width: 120px;
     height: 100vh;
-    border-left: 2px solid rgba(255, 255, 255, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
     &__wrapper {
       height: 100%;
       display: flex;
