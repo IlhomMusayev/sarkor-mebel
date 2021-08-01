@@ -52,8 +52,8 @@
             </ul>
         </nav>
 
-        <div class="hidden__nav">
-            <button class="hidden__nav__button btn shadow-none">
+        <div class="hidden__nav" id="hidden-nav">
+            <button class="hidden__nav__button btn shadow-none" id="nav-close" onclick="closeMenu()">
                 <img src="images/icons/Close.svg" alt="X">
             </button>
             <div class="hidden__nav__wrapper">
@@ -123,11 +123,11 @@
             </div>
         </div>
 
-        <nav class="header__right">
+        <nav class="header__right" id="right-menu">
             <div class="header__right__wrapper">
                 <ul class="header__right__icons">
                     <li class="header__right__icons__item">
-                        <a type="button">
+                        <a type="button" onclick="openMenu()">
                             <img src="images/icons/menu.svg" alt="menu">
                         </a>
                     </li>
@@ -225,20 +225,85 @@
         </div>
     </section>
 
+    <section id="categories" class="s__categories">
+        <div class="categories__overlay"></div>
+        <div class="container">
+            <div class="categories__wrapper">
+                <header class="categories__header">
+                    <h3 class="categories__header__text">Категории</h3>
+                </header>
+                <main class="categories__content">
+                    <div class="row">
+                        <div class="col-7 p-0">
+                            <div class="categories__image">
+                                <img src="images/cat1.png" alt="cat1">
+                            </div>
+                            <span class="categories__caption">
+                                <a href="#">Спальный гарнитур</a>
+                            </span>
+                        </div>
+                        <div class="col-5 p-0">
+                            <div class="categories__image d-flex justify-content-end">
+                                <img src="images/cat2.png" alt="cat2">
+                            </div>
+                            <span class="categories__caption">
+                                <a href="#">Спальный гарнитур</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 p-0">
+                            <div class="categories__image">
+                                <img src="images/cat3.png" alt="cat3">
+                            </div>
+                            <span class="categories__caption">
+                                <a href="#">Спальный гарнитур</a>
+                            </span>
+                        </div>
+                        <div class="col-4 p-0">
+                            <div class="categories__image">
+                                <img src="images/cat3.png" alt="cat3">
+                            </div>
+                            <span class="categories__caption">
+                                <a href="#">Спальный гарнитур</a>
+                            </span>
+                        </div>
+                        <div class="col-4 p-0">
+                            <div class="categories__image">
+                                <img src="images/cat3.png" alt="cat3">
+                            </div>
+                            <span class="categories__caption">
+                                <a href="#">Спальный гарнитур</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 p-0">
+                            <div class="categories__image">
+                                <img src="images/cat2.png" alt="cat2">
+                            </div>
+                            <span class="categories__caption">
+                                <a href="#">Спальный гарнитур</a>
+                            </span>
+                        </div>
+                        <div class="col-7 p-0">
+                            <div class="categories__image">
+                                <img src="images/cat1.png" alt="cat1">
+                            </div>
+                            <span class="categories__caption">
+                                <a href="#">Спальный гарнитур</a>
+                            </span>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
     <script src="js/aos-master/dist/aos.js"></script>
-    <script>
-        AOS.init()
-    </script>
-    <script>
-        window.onload = function () {
-            document.body.classList.add('loaded_hiding');
-            window.setTimeout(function () {
-                document.body.classList.add('loaded');
-                document.body.classList.remove('loaded_hiding');
-            }, 2000);
-        }
-    </script>
+    <script>AOS.init()</script>
     <script src="./js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

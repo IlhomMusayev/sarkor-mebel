@@ -2,3 +2,10 @@
 @import "home";
 @import "preloader";
 @import "hidden-nav";
+@import "categories";
+@import "colors";
+
+body {
+  overflow-x: hidden;
+  background-color: $dark-color;
+}
