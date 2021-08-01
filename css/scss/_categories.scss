@@ -6,6 +6,12 @@
 }
 
 .categories {
+  &__image {
+    img:hover {
+      transform: scale(1.05);
+      transition: .4s;
+    }
+  }
   &__wrapper {
     padding-top: 150px;
   }
@@ -33,6 +39,16 @@
   &__content {
     .row {
       margin: 0;
+    }
+  }
+  &__caption {
+    display: block;
+    margin-top: 10px;
+    a {
+      color: $white-color;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
     }
   }
 }
