@@ -36,15 +36,14 @@
   color: #FFFFFF;
 }
 .header__nav__list__item:hover {
-  color: #FFFFFF;
-  opacity: 60%;
+  color: #A67C52;
   transition: 0.5s;
 }
 .header__right {
   position: absolute;
   right: 0;
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   width: 120px;
   height: 100vh;
   border-left: 1px solid rgba(255, 255, 255, 0.8);
@@ -198,7 +197,7 @@
   margin-top: -35px;
   margin-left: -35px;
   text-align: center;
-  animation: preloader-rotate 3s infinite linear;
+  animation: preloader-rotate 2s infinite linear;
 }
 
 .preloader__item {
@@ -209,7 +208,7 @@
   border-radius: 100%;
   width: 35px;
   height: 35px;
-  animation: preloader-bounce 3s infinite ease-in-out;
+  animation: preloader-bounce 2s infinite ease-in-out;
 }
 
 .preloader__item:last-child {
@@ -232,12 +231,58 @@
   }
 }
 .loaded_hiding .preloader {
-  transition: 2s opacity;
+  transition: 1.5s opacity;
   opacity: 0;
 }
 
 .loaded .preloader {
   display: none;
+}
+
+.hidden__nav {
+  width: 550px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+.hidden__nav__button:focus {
+  outline: none;
+}
+.hidden__nav__button {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+}
+.hidden__nav__wrapper {
+  padding: 30px 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hidden__nav__list {
+  padding-left: 0;
+  list-style: none;
+}
+.hidden__nav__list__item {
+  margin: 35px 0;
+}
+.hidden__nav__list__item a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.hidden__nav__list__item a:hover {
+  color: #A67C52;
+  transition: 0.5s;
+}
+.hidden__nav__list__item__in {
+  list-style: none;
+}
+.hidden__nav__list__item__in li {
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=main.css.map */

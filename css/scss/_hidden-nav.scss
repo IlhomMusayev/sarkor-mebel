@@ -1,0 +1,47 @@
+@import "colors";
+
+.hidden__nav {
+  width: 550px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  background-color: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  &__button:focus {
+    outline: none;
+  }
+  &__button {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+  }
+  &__wrapper {
+    padding: 30px 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__list {
+    padding-left: 0;
+    list-style: none;
+    &__item {
+      margin: 35px 0;
+      a {
+        color: $white-color;
+        text-decoration: none;
+      }
+      a:hover {
+        color: $secondary-color;
+        transition: .5s;
+      }
+      &__in {
+        list-style: none;
+        li {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
