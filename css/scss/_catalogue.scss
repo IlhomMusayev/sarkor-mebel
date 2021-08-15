@@ -1,0 +1,41 @@
+@import "colors";
+
+.s__catalogue {
+  height: 50vh;
+  position: relative;
+}
+
+.catalogue {
+  &__wrapper {
+    padding: 50px 0;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $main-color;
+    background-image: url("../../images/icons/Pattern.svg");
+    z-index: -1;
+  }
+  &__image {
+    height: 90%;
+  }
+  &__content {
+    h4 {
+      color: $white-color;
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      padding-bottom: 20px;
+    }
+    p {
+      color: $white-color;
+      font-weight: normal;
+      font-size: 20px;
+      padding: 20px 0;
+      width: 70%;
+    }
+  }
+}

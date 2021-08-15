@@ -339,6 +339,105 @@
     max-width: 1200px;
   }
 }
+.recommend__card {
+  height: 540px;
+}
+.recommend__card__image {
+  background-color: #FFFFFF;
+}
+.recommend__card__image button {
+  top: 5%;
+  right: 5%;
+}
+.recommend__card__caption {
+  text-decoration: none;
+}
+.recommend__card__title {
+  color: #FFFFFF;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+.recommend__card__title:hover {
+  color: #A67C52;
+  transition: 0.3s;
+}
+.recommend__card__price {
+  color: #A67C52;
+  font-weight: bolder;
+}
+.recommend__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.recommend__list__item {
+  margin-right: 20px;
+}
+.recommend__list__item a {
+  color: #FFFFFF !important;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.recommend__list--active a {
+  color: #A67C52 !important;
+}
+.recommend__list__item:hover a {
+  color: #A67C52 !important;
+  transition: 0.3s;
+}
+.recommend__button {
+  padding: 12px 30px;
+  background-color: #A67C52;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.recommend__button__wrapper {
+  text-align: center;
+  margin: 50px 0px;
+}
+.recommend__button:hover {
+  color: #FFFFFF;
+}
+
+.s__catalogue {
+  height: 50vh;
+  position: relative;
+}
+
+.catalogue__wrapper {
+  padding: 50px 0;
+}
+.catalogue__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #09432B;
+  background-image: url("../../images/icons/Pattern.svg");
+  z-index: -1;
+}
+.catalogue__image {
+  height: 90%;
+}
+.catalogue__content h4 {
+  color: #FFFFFF;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+.catalogue__content p {
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 20px 0;
+  width: 70%;
+}
+
 body {
   overflow-x: hidden;
   background-color: #000000;
