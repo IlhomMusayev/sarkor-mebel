@@ -1,0 +1,81 @@
+@import "colors";
+
+.s__about {
+  margin: 120px 0 0;
+}
+
+.about {
+  &__header {
+    &__year {
+      position: relative;
+      margin-right: 90px;
+      h1 {
+        font-weight: bold;
+        font-size: 360px !important;
+        color: $secondary-color;
+        line-height: 0.7;
+        margin-bottom: 0;
+      }
+      span {
+        position: absolute;
+        color: $white-color;
+        font-weight: bolder;
+        font-size: 32px;
+        bottom: -20px;
+        left: 330px;;
+      }
+    }
+    &__content {
+      h4 {
+        font-size: 40px;
+        font-weight: bold;
+        color: $white-color;
+        width: 90%;
+      }
+      p {
+        font-size: 18px;
+        color: $white-color;
+        width: 90%;
+      }
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        p {
+          color: $secondary-color;
+          margin-bottom: 0;
+          margin-right: 10px;
+          width: auto;
+        }
+      }
+    }
+  }
+  &__content {
+    margin-top: 140px;
+    &__text {
+      color: $white-color;
+
+      h5 {
+        font-weight: bold;
+        font-size: 22px;
+        width: 80%;
+      }
+      p {
+        margin-top: 20px !important;
+        font-size: 18px;
+        padding-right: 20px;
+      }
+    }
+    &__list {
+      &__item {
+        list-style: none;
+        display: flex;
+        margin-bottom: 90px;
+      }
+    }
+    &__icon {
+      padding-right: 50px;
+    }
+  }
+}

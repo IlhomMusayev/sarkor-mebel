@@ -438,6 +438,98 @@
   width: 70%;
 }
 
+.s__about {
+  margin: 120px 0 0;
+}
+
+.about__header__year {
+  position: relative;
+  margin-right: 90px;
+}
+.about__header__year h1 {
+  font-weight: bold;
+  font-size: 360px !important;
+  color: #A67C52;
+  line-height: 0.7;
+  margin-bottom: 0;
+}
+.about__header__year span {
+  position: absolute;
+  color: #FFFFFF;
+  font-weight: bolder;
+  font-size: 32px;
+  bottom: -20px;
+  left: 330px;
+}
+.about__header__content h4 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFFFFF;
+  width: 90%;
+}
+.about__header__content p {
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 90%;
+}
+.about__header__content a {
+  color: #A67C52;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.about__header__content a p {
+  color: #A67C52;
+  margin-bottom: 0;
+  margin-right: 10px;
+  width: auto;
+}
+.about__content {
+  margin-top: 140px;
+}
+.about__content__text {
+  color: #FFFFFF;
+}
+.about__content__text h5 {
+  font-weight: bold;
+  font-size: 22px;
+  width: 80%;
+}
+.about__content__text p {
+  margin-top: 20px !important;
+  font-size: 18px;
+  padding-right: 20px;
+}
+.about__content__list__item {
+  list-style: none;
+  display: flex;
+  margin-bottom: 90px;
+}
+.about__content__icon {
+  padding-right: 50px;
+}
+
+.footer__content {
+  border-top: 0.8px solid #FFFFFF;
+  border-bottom: 0.8px solid #FFFFFF;
+}
+.footer__list {
+  margin: 80px 0;
+}
+.footer__list__item {
+  list-style: none;
+  margin: 20px 0;
+}
+.footer__list__item h5 {
+  color: #A67C52;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.footer__list__item a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 body {
   overflow-x: hidden;
   background-color: #000000;

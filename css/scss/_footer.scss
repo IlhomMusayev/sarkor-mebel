@@ -1,0 +1,28 @@
+@import "colors";
+
+.s__footer {
+
+}
+
+.footer {
+  &__content {
+    border-top: .8px solid $white-color;
+    border-bottom: .8px solid $white-color;
+  }
+  &__list {
+    margin: 80px 0;
+    &__item {
+      list-style: none;
+      margin: 20px 0;
+      h5 {
+        color: $secondary-color;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: $white-color;
+      }
+    }
+  }
+}
