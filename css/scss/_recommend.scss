@@ -5,6 +5,11 @@
     height: 540px;
     &__image {
       background-color: $white-color;
+      width: 370px;
+      height: 470px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       button {
         top: 5%;
         right: 5%;

@@ -23,6 +23,29 @@
         text-decoration: none;
         color: $white-color;
       }
+      a:hover {
+        color: $secondary-color;
+        transition: .3s;
+      }
+      a:active {
+        color: $secondary-color;
+      }
+      a:focus {
+        color: $secondary-color;
+      }
+      p {
+        color: $white-color;
+      }
+    }
+  }
+  &__info {
+    &__wrapper {
+      margin: 33px 0;
+    }
+    &__copyright {
+      p {
+        color: $white-color;
+      }
     }
   }
 }

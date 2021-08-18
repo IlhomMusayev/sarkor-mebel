@@ -1,0 +1,30 @@
+@import "colors";
+
+.s__breadcrumb {
+    padding: 30px 0 60px;
+}
+
+.breadcrumb {
+  &__item {
+    color: $white-color;
+    font-size: 18px;
+    a {
+      color: $white-color;
+      text-decoration: none;
+    }
+  }
+  &__item + &__item {
+    padding-left: 25px;
+    position: relative;
+  }
+  &__item + &__item:before {
+    background-image: url("../../images/icons/small-arrow.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    content: " ";
+    position: absolute;
+    top: 7px;
+    left: 8px;
+  }
+}
