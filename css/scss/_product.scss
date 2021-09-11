@@ -1,0 +1,18 @@
+@import "colors";
+
+.s__product {
+  position: relative;
+  min-height: 100vh;
+}
+
+.product {
+  &__wrapper {
+    padding-top: 125px;
+  }
+  &__content {
+    padding-right: 40px;
+    p {
+      color: $white-color;
+    }
+  }
+}

@@ -9,8 +9,15 @@
 @import "about";
 @import "footer";
 @import "breadcrumb";
+@import "basket";
+@import "product";
 
 body {
   overflow-x: hidden;
   background-color: $dark-color;
+}
+
+.cancel__icon__dark {
+  stroke: #363636;
+  fill: #FFFFFF;
 }
