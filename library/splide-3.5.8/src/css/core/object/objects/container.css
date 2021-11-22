@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=container.css.map */
+.splide__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+/*# sourceMappingURL=container.css.map */

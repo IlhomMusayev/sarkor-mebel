@@ -1,1 +1,17 @@
-/* No CSS *//*# sourceMappingURL=list.css.map */
+.splide__list {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.splide.is-initialized:not(.is-active) .splide__list {
+  display: block;
+}
+/*# sourceMappingURL=list.css.map */

@@ -1570,6 +1570,11 @@
   margin: 0 auto;
 }
 
+.about__me__main .container .about__me__content img {
+  width: 430px;
+  height: 500px;
+}
+
 .about__me__main .container .about__me__content .title {
   position: absolute;
   left: 0;
@@ -1582,23 +1587,64 @@
   text-transform: uppercase;
 }
 
+.about__me__main .container .about__me__content .about__content {
+  margin-top: 0;
+}
+
 .about__me__main .container .about__me__content .about__content .sub__title {
   margin: 50px 0;
 }
 
 .about__me__main .container .about__me__content .about__content .sub__title h3 {
   font-weight: 300;
-  font-size: 40px;
-  line-height: 40px;
-  text-transfor: uppercase;
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
 }
 
 .about__me__main .container .about__me__content .about__content .content {
+  width: 80%;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 18px;
   line-height: 26px;
   margin-top: 10px;
+}
+
+.about__me__main .container .about__farm .about__me__image img {
+  width: 370px;
+  height: 370px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__me__main .container .about__farm .about__fram__content {
+  margin: 120px 0;
+}
+
+.about__me__main .container .about__farm .about__fram__content .sub__title h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 54px;
+  text-transform: uppercase;
+  width: 70%;
+}
+
+.about__me__main .container .about__farm .about__fram__content p {
+  width: 90%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+.about__me__main .s__about {
+  padding: 100px 0;
+  background-color: #09432B;
+  background-image: url("../../images/icons/Pattern.svg");
+  z-index: -1;
 }
 
 body {
