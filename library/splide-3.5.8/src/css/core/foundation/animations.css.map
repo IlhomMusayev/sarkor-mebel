@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,cAAU;EACR,EAAE;IACA,SAAS,EAAE,UAAY;;EAGzB,IAAI;IACF,SAAS,EAAE,eAAiB",
+    "sources": [
+        "animations.scss"
+    ],
+    "names": [],
+    "file": "animations.css"
+}

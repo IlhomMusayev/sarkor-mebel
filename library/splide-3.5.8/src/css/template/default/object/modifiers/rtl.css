@@ -1,0 +1,28 @@
+.splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--prev,
+.splide--rtl > .splide__track > .splide__arrows .splide__arrow--prev,
+.splide--rtl > .splide__arrows .splide__arrow--prev {
+  left: auto;
+  right: 1em;
+}
+
+.splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--prev svg,
+.splide--rtl > .splide__track > .splide__arrows .splide__arrow--prev svg,
+.splide--rtl > .splide__arrows .splide__arrow--prev svg {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--next,
+.splide--rtl > .splide__track > .splide__arrows .splide__arrow--next,
+.splide--rtl > .splide__arrows .splide__arrow--next {
+  left: 1em;
+  right: auto;
+}
+
+.splide--rtl > .splide__slider > .splide__track > .splide__arrows .splide__arrow--next svg,
+.splide--rtl > .splide__track > .splide__arrows .splide__arrow--next svg,
+.splide--rtl > .splide__arrows .splide__arrow--next svg {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+/*# sourceMappingURL=rtl.css.map */

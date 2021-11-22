@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Sarkor · Mebel</title>
@@ -15,288 +15,643 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/scss/main.css">
     <link rel="stylesheet" href="../js/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="../library/splide-3.5.8/dist/css/splide.min.css">
 
 </head>
 
 <body>
 
-<div class="preloader">
-    <div class="preloader__row">
-        <div class="preloader__item"></div>
-        <div class="preloader__item"></div>
-    </div>
-</div>
-
-<header class="s__header">
-
-    <div class="header__logo">
-        <a href="index.html" class="header__logo__item">
-            <img src="../images/logotip.png" alt="Sarkor">
-        </a>
-    </div>
-
-    <nav class="header__nav">
-        <ul class="header__nav__list">
-            <li>
-                <a href="#" class="header__nav__list__item">Главная</a>
-            </li>
-            <li>
-                <a href="#" class="header__nav__list__item">Категории</a>
-            </li>
-            <li>
-                <a href="#" class="header__nav__list__item">Сервис</a>
-            </li>
-            <li>
-                <a href="#" class="header__nav__list__item">Каталог</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="hidden__nav" id="hidden-nav">
-        <button class="hidden__nav__button btn shadow-none" id="nav-close" onclick="closeMenu()">
-            <img src="../images/icons/Close.svg" alt="X">
-        </button>
-        <div class="hidden__nav__wrapper">
-            <ul class="hidden__nav__list">
-                <li class="hidden__nav__list__item">
-                    <a href="#">
-                        <h4>Главная</h4>
-                    </a>
-                </li>
-                <li class="hidden__nav__list__item">
-                    <a href="#">
-                        <h4>Категории</h4>
-                    </a>
-                </li>
-                <li class="hidden__nav__list__item">
-                    <a href="#">
-                        <h4>Компания</h4>
-                    </a>
-                    <ul class="hidden__nav__list__item__in">
-                        <li>
-                            <a href="#">
-                                О фабрике
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Производство
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Наши клиенты
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Наши партнеры
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Новости
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="hidden__nav__list__item">
-                    <a href="#">
-                        <h4>Сервис</h4>
-                    </a>
-                </li>
-                <li class="hidden__nav__list__item">
-                    <a href="#">
-                        <h4>Каталог</h4>
-                    </a>
-                </li>
-            </ul>
-            <div class="hidden__nav__footer mb-4">
-                <div class="hidden__nav__help mb-4">
-                    <a href="#" class="text-decoration-none fw-bolder text-light h6 text-uppercase">Нужна помощь?</a>
-                </div>
-                <div class="hidden__nav__footer__info d-flex flex-column">
-                    <a href="#" class="text-decoration-none text-light">Sarkormebel@gmail.com</a>
-                    <a href="tel:+998909009000" class="text-decoration-none text-light">+99 890 900 90 00</a>
-                </div>
-            </div>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
         </div>
     </div>
 
-    <nav class="header__right position-fixed" id="right-menu">
-        <div class="header__right__wrapper">
-            <ul class="header__right__icons">
-                <li class="header__right__icons__item">
-                    <a type="button" onclick="openMenu()">
-                        <img src="../images/icons/menu.svg" alt="menu">
-                    </a>
+    <header class="s__header">
+
+        <div class="header__logo">
+            <a href="index.html" class="header__logo__item">
+                <img src="../images/logotip.png" alt="Sarkor">
+            </a>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li>
+                    <a href="#" class="header__nav__list__item">Главная</a>
                 </li>
-                <li class="header__right__icons__item">
-                    <a href="#">
-                        <img src="../images/icons/User.svg" alt="user">
-                    </a>
+                <li>
+                    <a href="#" class="header__nav__list__item">Категории</a>
                 </li>
-                <li class="header__right__icons__item">
-                    <a href="#" type="button">
-                        <img src="../images/icons/basket.svg" alt="basket">
-                    </a>
-                    <span class="header__right__icons__item__badge">
-                            <p>3</p>
-                        </span>
+                <li>
+                    <a href="#" class="header__nav__list__item">Сервис</a>
+                </li>
+                <li>
+                    <a href="#" class="header__nav__list__item">Каталог</a>
                 </li>
             </ul>
-            <div class="header__right__phone">
-                <a href="#">
-                    <img src="../images/icons/Phone.svg" alt="phone">
-                </a>
-            </div>
-            <ul class="header__right__socials">
-                <li class="header__right__socials__item">
-                    <a href="#" title="facebook">
-                        <img src="../images/icons/Facebook.svg" alt="facebook">
-                    </a>
-                </li>
-                <li class="header__right__socials__item">
-                    <a href="#" title="instagram">
-                        <img src="../images/icons/Instagram.svg" alt="instagram">
-                    </a>
-                </li>
-                <li class="header__right__socials__item" title="telegram">
-                    <a href="#">
-                        <img src="../images/icons/Telegram.svg" alt="telegram">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
 
-</header>
-
-<section id="product" class="s__product mb-5 pb-5">
-    <div class="container">
-        <div class="product__wrapper mb-4">
-            <ul class="s__breadcrumb list-unstyled">
-                <li class="breadcrumb__item d-inline">
-                    <a href="/">Главная</a>
-                </li>
-                <li class="breadcrumb__item d-inline">
-                    <a href="/">Профиль</a>
-                </li>
-                <li class="breadcrumb__item d-inline">
-                    <a href="/">Корзина</a>
-                </li>
-            </ul>
-            <main class="product__content">
-
-            </main>
-        </div>
-    </div>
-</section>
-
-<footer class="s__footer mt-5">
-    <main class="footer__content">
-        <div class="container">
-            <div class="row footer__list">
-                <ul class="col-3 footer__list__wrapper">
-                    <li class="footer__list__item">
-                        <h5 class="text-uppercase">Категории</h5>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Спальный гарнитур</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Гостиный гарнитур</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Мягкая мебель</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Офисная мебель</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Стулья</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Аксессуары</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Индивидуальный заказ</a>
-                    </li>
-                </ul>
-                <ul class="col-3 footer__list__wrapper">
-                    <li class="footer__list__item">
-                        <h5 class="text-uppercase">Компания</h5>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">О фабрике</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Производство</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Наши партнёры</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Новости</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-                <ul class="col-3 footer__list__wrapper">
-                    <li class="footer__list__item">
-                        <h5 class="text-uppercase">Сервис</h5>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Мебель на заказ</a>
-                    </li>
-                    <li class="footer__list__item">
-                        <a href="#">Обслуживание</a>
-                    </li>
-                </ul>
-                <ul class="col-3 footer__list__wrapper">
-                    <li class="footer__list__item">
-                        <h5 class="text-uppercase">Контакты</h5>
-                    </li>
-                    <li class="footer__list__item">
-                        <p class="m-0 fw-bold">+998 98 300 36 76</p>
-                    </li>
-                    <li class="footer__list__item">
-                        <p class="m-0 pe-5">Зангиатинский р-н, пос. Чигатай-Актепа, ул. Далабог</p>
-                    </li>
-                    <li class="footer__list__item">
-                        <p class="m-0 fw-bold">Мягкая мебель</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </main>
-    <div class="footer__info">
-        <div class="container">
-            <div class="footer__info__wrapper d-flex justify-content-between">
-                <div class="footer__info__copyright">
-                    <p class="m-0">Copyright © 2020 Sarkor Mebel. All RIghts Reserved</p>
-                </div>
-                <div class="footer__info__copyright d-flex align-items-center">
-                    <p class="m-0 fw-bold">Мы принимаем к оплате:</p>
-                    <div class="footer__info__payments d-flex ms-2">
-                        <a href="#" class="d-block ms-2">
-                            <img src="../images/icons/payme.png" alt="payme">
+        <div class="hidden__nav" id="hidden-nav">
+            <button class="hidden__nav__button btn shadow-none" id="nav-close" onclick="closeMenu()">
+                <img src="../images/icons/Close.svg" alt="X">
+            </button>
+            <div class="hidden__nav__wrapper">
+                <ul class="hidden__nav__list">
+                    <li class="hidden__nav__list__item">
+                        <a href="#">
+                            <h4>Главная</h4>
                         </a>
-                        <a href="#" class="d-block ms-2">
-                            <img src="../images/icons/click.png" alt="click">
+                    </li>
+                    <li class="hidden__nav__list__item">
+                        <a href="#">
+                            <h4>Категории</h4>
                         </a>
+                    </li>
+                    <li class="hidden__nav__list__item">
+                        <a href="#">
+                            <h4>Компания</h4>
+                        </a>
+                        <ul class="hidden__nav__list__item__in">
+                            <li>
+                                <a href="#">
+                                    О фабрике
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Производство
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Наши клиенты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Наши партнеры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Новости
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden__nav__list__item">
+                        <a href="#">
+                            <h4>Сервис</h4>
+                        </a>
+                    </li>
+                    <li class="hidden__nav__list__item">
+                        <a href="#">
+                            <h4>Каталог</h4>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hidden__nav__footer mb-4">
+                    <div class="hidden__nav__help mb-4">
+                        <a href="#" class="text-decoration-none fw-bolder text-light h6 text-uppercase">Нужна
+                            помощь?</a>
+                    </div>
+                    <div class="hidden__nav__footer__info d-flex flex-column">
+                        <a href="#" class="text-decoration-none text-light">Sarkormebel@gmail.com</a>
+                        <a href="tel:+998909009000" class="text-decoration-none text-light">+99 890 900 90 00</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
 
-<script src="../js/aos-master/dist/aos.js"></script>
-<script>AOS.init()</script>
-<script src="../js/bootstrap.js"></script>
-<script src="../js/index.js"></script>
+        <nav class="header__right position-fixed" id="right-menu">
+            <div class="header__right__wrapper">
+                <ul class="header__right__icons">
+                    <li class="header__right__icons__item">
+                        <a type="button" onclick="openMenu()">
+                            <img src="../images/icons/menu.svg" alt="menu">
+                        </a>
+                    </li>
+                    <li class="header__right__icons__item">
+                        <a href="#">
+                            <img src="../images/icons/User.svg" alt="user">
+                        </a>
+                    </li>
+                    <li class="header__right__icons__item">
+                        <a href="#" type="button">
+                            <img src="../images/icons/basket.svg" alt="basket">
+                        </a>
+                        <span class="header__right__icons__item__badge">
+                            <p>3</p>
+                        </span>
+                    </li>
+                </ul>
+                <div class="header__right__phone">
+                    <a href="#">
+                        <img src="../images/icons/Phone.svg" alt="phone">
+                    </a>
+                </div>
+                <ul class="header__right__socials">
+                    <li class="header__right__socials__item">
+                        <a href="#" title="facebook">
+                            <img src="../images/icons/Facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="header__right__socials__item">
+                        <a href="#" title="instagram">
+                            <img src="../images/icons/Instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="header__right__socials__item" title="telegram">
+                        <a href="#">
+                            <img src="../images/icons/Telegram.svg" alt="telegram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Main Section -->
+    <section id="product" class="s__product mb-5 pb-5">
+        <div class="product__wrapper mb-4">
+            <div class="container">
+                <ul class="s__breadcrumb list-unstyled">
+                    <li class="breadcrumb__item d-inline">
+                        <a href="/">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item d-inline">
+                        <a href="/">Каталог</a>
+                    </li>
+                    <li class="breadcrumb__item d-inline">
+                        <a href="/">Мягкая мебель</a>
+                    </li>
+                    <li class="breadcrumb__item d-inline">
+                        <a href="/">Мягкая мебель «Уголок»</a>
+                    </li>
+                </ul>
+            </div>
+            <main class="product__content">
+                <div class="container">
+                    <div class="product__about d-flex row">
+                        <div class="product__about__img col-6">
+                            <div class="product__galery column ">
+                                <img id=featured src="../images/image 24.png">
+
+                                <div id="slide-wrapper">
+
+                                    <div id="slider">
+                                        <img class="thumbnail active" src="../images/image 24.png">
+                                        <img class="thumbnail" src="../images/image 24.png">
+                                        <img class="thumbnail" src="../images/image 24.png">
+
+                                        <img class="thumbnail" src="../images/image 24.png">
+                                        <img class="thumbnail" src="../images/image 24.png">
+                                        <img class="thumbnail" src="../images/image 24.png">
+                                        <img class="thumbnail" src="../images/image 24.png">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="product__description">
+                                <div class="title">
+                                    <h3>Характеристики:</h3>
+                                </div>
+                                <p>
+                                    Таким образом дальнейшее развитие различных форм деятельности в значительной степени
+                                    обуславливает создание систем массового участия. Не следует, однако забывать, что
+                                    начало повседневной работы по формированию позиции требуют от нас анализа
+                                    соответствующий условий активизации.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__content__about col-6">
+                            <div class="product__category__name d-flex justify-content-between align-items-center">
+                                <h3 class="text-white">Категория: Мягкая мебель</h3>
+                                <span class="star__icon">
+                                    <img src="../images/icons/star.svg" alt="star icon">
+                                </span>
+                            </div>
+
+                            <div class="product__name">
+                                <h2>Мягкая мебель «Уголок»</h2>
+                            </div>
+                            <div class="product__price">
+                                <h3>650 900 sum</h3>
+                            </div>
+
+                            <div class="product__add__cart__section d-flex justify-content-between align-items-center">
+                                <div class="cart__count__section d-flex align-items-center">
+                                    <h3 class="title">Количество:</h3>
+                                    <div class="cart__count d-flex align-items-center">
+                                        <button class="minus">
+                                            <img src="../images/icons/arrow-lefr.svg" alt="left-arror">
+                                        </button>
+                                        <input type="text" value="1">
+                                        <button class="plus">
+                                            <img src="../images/icons/arrow-lefr.svg" alt="left-arror">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="add__cart__button">
+                                    <button class="btn btn-add">Добавить в корзинку</button>
+                                </div>
+                            </div>
+
+                            <div class="product__specifications">
+                                <div class="title">
+                                    <h2>Характеристики:</h2>
+                                </div>
+                                <div class="product__specifications__item">
+                                    <h4>Цвет товара: <span>Серый</span></h4>
+                                    <h4>Каркас: <span>Дерево</span></h4>
+                                    <h4>Обивка: <span>Ткань Турция</span></h4>
+                                    <h4>Наполнитель: <span>Поролон</span></h4>
+                                    <h4>Размеры: <span>Диван L 220, H90, B 90, 2L200
+                                        </span></h4>
+                                </div>
+
+                                <div class="product__payments">
+
+                                    <ul class="list__items">
+                                        <li class="title">
+                                            <h3>Оплата</h3>
+                                        </li>
+                                        <li class="list__item">
+                                            Наличными
+                                        </li>
+                                        <li class="list__item">
+                                            Терминалом
+                                        </li>
+                                        <li class="list__item">
+                                            Перечислением
+                                        </li>
+                                        <li class="list__item">
+                                            Payme, Click
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="product__shiping">
+                                    <ul class="list__items">
+                                        <li class="title">
+                                            <h3>Доставка</h3>
+                                        </li>
+                                        <li class="list__item">
+                                            Доставка по г.Ташкент Бесплатно
+                                        </li>
+                                        <li class="list__item">
+                                            Доставим Ваш заказ за 1-2 дня
+                                        </li>
+                                        <li class="list__item">
+                                            Подъём Бесплатно
+                                        </li>
+                                        <li class="list__item">
+                                            Сборка Бесплатно
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fabrics__for__furniture">
+                    <div class="container d-flex justify-content-center align-items-center">
+                        <div class="furniture__contents col-6">
+                            <div class="title">
+                                <h3>Обивочные <br> ткани</h3>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Sarkor Mebel плодотворно сотрудничает с одним из лидирующих турецких текстильных
+                                    производств Aydin Tekstil
+                                </p>
+                            </div>
+                        </div>
+                        <div class="furniture__galery col-6">
+                            <div class="splide">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="../images/furniture.png" alt="furniture image">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/furniture.png" alt="furniture image">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/furniture.png" alt="furniture image">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fabrics__for__furniture2">
+                    <div class="container d-flex justify-content-center align-items-center">
+                        <div class="furniture__galery col-6">
+                            <div class="splide2" id="splide2">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="../images/furniture.png" alt="furniture image">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/furniture.png" alt="furniture image">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="../images/furniture.png" alt="furniture image">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="furniture__contents col-6">
+                            <div class="title">
+                                <h3>Обивочные <br> ткани</h3>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Sarkor Mebel плодотворно сотрудничает с одним из лидирующих турецких текстильных
+                                    производств Aydin Tekstil
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appointment__section">
+                    <div class="container row d-flex justify-content-center align-items-center">
+                        <div class="appointment__content col-6">
+                            <div class="title">
+                                <h2>Возникла вопросы?</h2>
+                            </div>
+                            <div class="contnent">
+                                <p>
+                                    Звоните любое для вас удобное время по номеру
+                                    или оставите свои контакты наши менеджеры
+                                    позвонят вам самое ближайшее время.
+                                </p>
+                            </div>
+                            <div class="call-me__section">
+                                <div class="title">
+                                    <h4>Звоните мне</h4>
+                                    <div class="phone__number">
+                                        <h3>+998 (98) 300-36-76</h3>
+                                    </div>
+                                    <p>или оставьте свои данные</p>
+                                </div>
+                            </div>
+
+                            <div class="appointment-form__section">
+                                <input type="text" id="name" name="name" placeholder="Имя"
+                                    class="appointment-form__input">
+                                <input type="text" id="phone" name="phone" placeholder="Телефон"
+                                    class="appointment-form__input">
+                                <button class="btn btn-apponitment">Отправить заявку</button>
+                            </div>
+                        </div>
+                        <div class="appointment__image col-6">
+                            <div class="image">
+                                <img src="../images/GirlFace.png" alt="Reception">
+                            </div>
+                            <div class="reseption__about">
+                                <div class="name">
+                                    <h4>Азима Абдуллаева</h4>
+                                </div>
+                                <div class="level">
+                                    <p>Главный менеджер по продажом
+                                        Салон: М.Горкий.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__section">
+                    <div class="container">
+                        <div class="title">
+                            <h2>За что выбирают Sarkor Mebel</h2>
+                        </div>
+                        <div class="skills__items row d-flex justify-content-center">
+                            <div class="skill__item col-3">
+                                <img src="../images/icons/wood.svg" alt="wood">
+                                <span class="mt-4">Мы используем только качественные материалы</span>
+                            </div>
+                            <div class="skill__item col-3">
+                                <img src="../images/icons/seat.svg" alt="seat" style="width: 75px;">
+                                <span class="mt-4">Возможность заказать индивидуальный заказ мебели</span>
+                            </div>
+                            <div class="skill__item col-3">
+                                <img src="../images/icons/wallet.svg" alt="wallet" style="width: 50px;">
+                                <span class="mt-4">Доступные цены на любую мебель</span>
+                            </div>
+                            <div class="skill__item col-3">
+                                <img src="../images/icons/medal.svg" alt="medal" style="width: 40px;">
+                                <span class="mt-3">Более 27 лет на рынке Узбекистана</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recomendation__furneture">
+                    <div class="container">
+                        <div class="title">
+                            <h3>Похожие товары</h3>
+                        </div>
+                        <div class="row row-cols-2 row-cols-md-3" data-aos="fade-up">
+                            <div class="col mt-5">
+                                <div class="recommend__card" data-aos="fade-up">
+                                    <div class="recommend__card__image position-relative">
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-center shadow-none position-absolute">
+                                            <img src="../images/icons/star.svg" alt="star">
+                                        </button>
+                                        <img src="../images/card-sofa.png" alt="sofa">
+                                    </div>
+                                    <a class="d-block recommend__card__caption" href="#">
+                                        <h4 class="recommend__card__title">
+                                            Мягкая мебель Barocco Lux
+                                        </h4>
+                                        <p class="recommend__card__price">
+                                            650 900 sum
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col mt-5">
+                                <div class="recommend__card" data-aos="fade-up">
+                                    <div class="recommend__card__image position-relative">
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-center shadow-none position-absolute">
+                                            <img src="../images/icons/star.svg" alt="star">
+                                        </button>
+                                        <img src="../images/card-sofa2.png" alt="sofa">
+                                    </div>
+                                    <a class="d-block recommend__card__caption" href="#">
+                                        <h4 class="recommend__card__title">
+                                            Мягкая мебель Barocco Lux
+                                        </h4>
+                                        <p class="recommend__card__price">
+                                            650 900 sum
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col mt-5">
+                                <div class="recommend__card" data-aos="fade-up">
+                                    <div class="recommend__card__image position-relative">
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-center shadow-none position-absolute">
+                                            <img src="../images/icons/star.svg" alt="star">
+                                        </button>
+                                        <img src="../images/card-sofa3.png" alt="sofa">
+                                    </div>
+                                    <a class="d-block recommend__card__caption" href="#">
+                                        <h4 class="recommend__card__title">
+                                            Мягкая мебель Barocco Lux
+                                        </h4>
+                                        <p class="recommend__card__price">
+                                            650 900 sum
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        </div>
+    </section>
+    <!-- End Main Section -->
+
+    <!-- Footer -->
+    <footer class="s__footer mt-5">
+        <main class="footer__content">
+            <div class="container">
+                <div class="row footer__list">
+                    <ul class="col-3 footer__list__wrapper">
+                        <li class="footer__list__item">
+                            <h5 class="text-uppercase">Категории</h5>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Спальный гарнитур</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Гостиный гарнитур</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Мягкая мебель</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Офисная мебель</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Стулья</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Аксессуары</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Индивидуальный заказ</a>
+                        </li>
+                    </ul>
+                    <ul class="col-3 footer__list__wrapper">
+                        <li class="footer__list__item">
+                            <h5 class="text-uppercase">Компания</h5>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">О фабрике</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Производство</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Наши партнёры</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="col-3 footer__list__wrapper">
+                        <li class="footer__list__item">
+                            <h5 class="text-uppercase">Сервис</h5>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Мебель на заказ</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Обслуживание</a>
+                        </li>
+                    </ul>
+                    <ul class="col-3 footer__list__wrapper">
+                        <li class="footer__list__item">
+                            <h5 class="text-uppercase">Контакты</h5>
+                        </li>
+                        <li class="footer__list__item">
+                            <p class="m-0 fw-bold">+998 98 300 36 76</p>
+                        </li>
+                        <li class="footer__list__item">
+                            <p class="m-0 pe-5">Зангиатинский р-н, пос. Чигатай-Актепа, ул. Далабог</p>
+                        </li>
+                        <li class="footer__list__item">
+                            <p class="m-0 fw-bold">Мягкая мебель</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div class="footer__info">
+            <div class="container">
+                <div class="footer__info__wrapper d-flex justify-content-between">
+                    <div class="footer__info__copyright">
+                        <p class="m-0">Copyright © 2020 Sarkor Mebel. All RIghts Reserved</p>
+                    </div>
+                    <div class="footer__info__copyright d-flex align-items-center">
+                        <p class="m-0 fw-bold">Мы принимаем к оплате:</p>
+                        <div class="footer__info__payments d-flex ms-2">
+                            <a href="#" class="d-block ms-2">
+                                <img src="../images/icons/payme.png" alt="payme">
+                            </a>
+                            <a href="#" class="d-block ms-2">
+                                <img src="../images/icons/click.png" alt="click">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="../js/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/product-slide.js"></script>
+    <script type="text/javascript" src="../library/splide-3.5.8/dist/js/splide.min.js"></script>
+
+    <script type="text/javascript">
+        let splide = new Splide('.splide', {
+            type: 'loop',
+        });
+        splide.mount()
+
+        let splide2 = new Splide('.splide2', {
+            type: 'loop',
+        });
+        splide2.mount();
+    </script>
 </body>
 
 </html>

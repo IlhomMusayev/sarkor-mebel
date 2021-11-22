@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGG,AACC,kBADU,GACR,eAAe,GAAG,cAAc;AADnC,kBAAW,GAER,cAAc,CAAI;EAClB,WAAW,EAAE,IAAI;CAClB",
+    "sources": [
+        "draggable.scss"
+    ],
+    "names": [],
+    "file": "draggable.css"
+}

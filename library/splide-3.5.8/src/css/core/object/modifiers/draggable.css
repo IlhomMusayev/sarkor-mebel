@@ -1,0 +1,8 @@
+.splide--draggable > .splide__slider > .splide__track,
+.splide--draggable > .splide__track {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=draggable.css.map */

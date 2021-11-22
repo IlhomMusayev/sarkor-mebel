@@ -1,0 +1,5 @@
+.splide--ttb.is-active > .splide__slider > .splide__track > .splide__list,
+.splide--ttb.is-active > .splide__track > .splide__list {
+  display: block;
+}
+/*# sourceMappingURL=ttb.css.map */
