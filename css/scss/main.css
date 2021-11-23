@@ -1647,6 +1647,311 @@
   z-index: -1;
 }
 
+.awards__section {
+  margin-top: 100px;
+}
+
+.awards__section .awards__title h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.awards__section .awards__content p {
+  width: 85%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.awards__section .awards__carusel {
+  margin-top: 150px;
+}
+
+.awards__section .awards__carusel .splide .splide__arrows .splide__arrow {
+  background: none;
+  opacity: 1;
+}
+
+.awards__section .awards__carusel .splide .splide__arrows .splide__arrow--prev {
+  position: absolute;
+  top: -10%;
+  left: 35%;
+}
+
+.awards__section .awards__carusel .splide .splide__arrows .splide__arrow--prev svg {
+  display: none;
+}
+
+.awards__section .awards__carusel .splide .splide__arrows .splide__arrow--next {
+  position: absolute;
+  top: -10%;
+  right: 35%;
+}
+
+.awards__section .awards__carusel .splide .splide__arrows .splide__arrow--next svg {
+  display: none;
+}
+
+.awards__section .awards__carusel .splide .splide__track .splide__list .splide__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.awards__section .awards__carusel .splide .splide__track .splide__list .splide__slide img {
+  width: 350px;
+}
+
+.awards__section .awards__carusel .splide .splide__track .splide__list .splide__slide.is-active img {
+  width: 450px;
+}
+
+.become__a__part {
+  margin: 100px 0 0 0;
+}
+
+.become__a__part .title h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.become__a__part .content {
+  margin: 0 auto;
+  width: 50%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 50px;
+}
+
+.become__a__part .btn-apponitment {
+  padding: 20px 40px;
+  background: #A67C52;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+.become__a__part .btn-apponitment:hover {
+  background: #8b6238;
+}
+
+.clients__section {
+  color: #FFFFFF;
+}
+
+.clients__section .title {
+  margin: 50px 0;
+}
+
+.clients__section .title h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.clients__section .clients__items {
+  text-align: center;
+}
+
+.clients__section .clients__items .clinets__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #FFFFFF;
+  padding: 40px;
+}
+
+.upholstery__section {
+  color: #FFFFFF;
+}
+
+.upholstery__section .upholstery__slider .upholstery__slider__item .upholstery__content .title {
+  margin-bottom: 40px;
+}
+
+.upholstery__section .upholstery__slider .upholstery__slider__item .upholstery__content .title h3 {
+  width: 372px;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+.upholstery__section .upholstery__slider .upholstery__slider__item .upholstery__content .content {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  width: 383px;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image {
+  position: relative;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide {
+  width: 450px;
+  padding-bottom: 100px;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide .splide__arrows .splide__arrow {
+  width: 40px;
+  height: 40px;
+  background-color: #A67C52;
+  opacity: 1;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide .splide__arrows .splide__arrow svg {
+  fill: #FFFFFF;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide .splide__arrows .splide__arrow--prev {
+  position: absolute;
+  top: 50%;
+  left: -4%;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide .splide__arrows .splide__arrow--next {
+  position: absolute;
+  top: 50%;
+  right: -4%;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide .splide__slide img {
+  width: 100%;
+  height: 700px;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide3 {
+  width: 450px;
+  padding-top: 50px;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__arrows .splide__arrow {
+  width: 40px;
+  height: 40px;
+  background-color: #A67C52;
+  opacity: 1;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__arrows .splide__arrow svg {
+  fill: #FFFFFF;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__arrows .splide__arrow--prev {
+  position: absolute;
+  top: 50%;
+  left: -1%;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__arrows .splide__arrow--next {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+}
+
+.upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__slide img {
+  width: 100%;
+  height: 700px;
+}
+
+.wood__carving__section {
+  background-color: #09432B;
+  background-image: url("../../images/icons/Pattern.svg");
+  z-index: -1;
+  padding: 100px 0;
+}
+
+.wood__carving__section .wood__carving__slide {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.wood__carving__section .wood__carving__slide .splide2 {
+  position: relative;
+}
+
+.wood__carving__section .wood__carving__slide .splide2 .splide__arrows .splide__arrow {
+  width: 40px;
+  height: 40px;
+  background-color: #A67C52;
+  opacity: 1;
+}
+
+.wood__carving__section .wood__carving__slide .splide2 .splide__arrows .splide__arrow svg {
+  fill: #FFFFFF;
+}
+
+.wood__carving__section .wood__carving__slide .splide2 .splide__arrows .splide__arrow--prev {
+  position: absolute;
+  top: 75%;
+  left: 51%;
+}
+
+.wood__carving__section .wood__carving__slide .splide2 .splide__arrows .splide__arrow--next {
+  position: absolute;
+  top: 75%;
+  right: 42%;
+}
+
+.wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__content .sub__title h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 23px;
+  /* identical to box height */
+  text-transform: uppercase;
+}
+
+.wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__content .title {
+  width: 60%;
+  margin: 20px 0 30px 0;
+}
+
+.wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__content .title h2 {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+.wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__content .content {
+  width: 60%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__images img {
+  width: 600px;
+  height: 450px;
+}
+
 body {
   overflow-x: hidden;
   background-color: #191919;

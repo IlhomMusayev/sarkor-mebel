@@ -710,10 +710,129 @@
     }
 
 
-    .s__about{
+    .s__about {
         padding: 100px 0;
         background-color: #09432B;
         background-image: url("../../images/icons/Pattern.svg");
         z-index: -1;
+    }
+}
+
+.awards__section {
+    margin-top: 100px;
+
+    .awards__title {
+        h3 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            text-transform: uppercase;
+        }
+    }
+
+    .awards__content {
+        p {
+            width: 85%;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    .awards__carusel {
+        margin-top: 150px;
+
+        .splide {
+            .splide__arrows {
+
+                .splide__arrow {
+                    background: none;
+                    opacity: 1;
+                }
+
+                .splide__arrow--prev {
+                    position: absolute;
+                    top: -10%;
+                    left: 35%;
+
+                    svg {
+                        display: none;
+                    }
+
+                }
+
+                .splide__arrow--next {
+                    position: absolute;
+                    top: -10%;
+                    right: 35%;
+
+                    svg {
+                        display: none;
+                    }
+                }
+            }
+
+            .splide__track {
+                .splide__list {
+                    .splide__slide {
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            width: 350px;
+                        }
+                    }
+
+                    .splide__slide.is-active {
+                        img {
+                            width: 450px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.become__a__part {
+    margin: 100px 0 0 0;
+
+    .title {
+        h3 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            text-transform: uppercase;
+        }
+    }
+
+    .content {
+        margin: 0 auto;
+        width: 50%;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 50px;
+    }
+
+    .btn-apponitment {
+        padding: 20px 40px;
+        background: #A67C52;
+        color: $white-color;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 15px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 30px;
+    }
+
+    .btn-apponitment:hover {
+        background: #8b6238;
     }
 }
