@@ -1,0 +1,481 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Sarkor · Mebel</title>
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/scss/main.css">
+    <link rel="stylesheet" href="../js/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="../library/splide-3.5.8/dist/css/splide.min.css">
+
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+
+    <header class="s__header">
+
+        <div class="header__logo">
+            <a href="index.html" class="header__logo__item">
+                <img src="../images/logotip.png" alt="Sarkor">
+            </a>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li>
+                    <a href="#" class="header__nav__list__item">Главная</a>
+                </li>
+                <li>
+                    <a href="#" class="header__nav__list__item">Категории</a>
+                </li>
+                <li>
+                    <a href="#" class="header__nav__list__item">Сервис</a>
+                </li>
+                <li>
+                    <a href="#" class="header__nav__list__item">Каталог</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="hidden__nav" id="hidden-nav">
+            <button class="hidden__nav__button  shadow-none" id="nav-close" onclick="closeMenu()">
+                <img src="../images/icons/Close.svg" alt="X">
+            </button>
+            <div class="hidden__nav__wrapper">
+                <ul class="hidden__nav__list">
+                    <li class="hidden__nav__list__item">
+                        <a href="#">
+                            <h4>Главная</h4>
+                        </a>
+                    </li>
+                    <li class="hidden__nav__list__item">
+                        <a href="#">
+                            <h4>Категории</h4>
+                        </a>
+                    </li>
+                    <li class="hidden__nav__list__item">
+                        <a href="#">
+                            <h4>Компания</h4>
+                        </a>
+                        <ul class="hidden__nav__list__item__in">
+                            <li>
+                                <a href="#">
+                                    О фабрике
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Производство
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Наши клиенты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Наши партнеры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Новости
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden__nav__list__item">
+                        <a href="#">
+                            <h4>Сервис</h4>
+                        </a>
+                    </li>
+                    <li class="hidden__nav__list__item">
+                        <a href="#">
+                            <h4>Каталог</h4>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hidden__nav__footer mb-4">
+                    <div class="hidden__nav__help mb-4">
+                        <a href="#" class="text-decoration-none fw-bolder text-light h6 text-uppercase">Нужна
+                            помощь?</a>
+                    </div>
+                    <div class="hidden__nav__footer__info d-flex flex-column">
+                        <a href="#" class="text-decoration-none text-light">Sarkormebel@gmail.com</a>
+                        <a href="tel:+998909009000" class="text-decoration-none text-light">+99 890 900 90 00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header__right position-fixed" id="right-menu">
+            <div class="header__right__wrapper">
+                <ul class="header__right__icons">
+                    <li class="header__right__icons__item">
+                        <a type="button" onclick="openMenu()">
+                            <img src="../images/icons/menu.svg" alt="menu">
+                        </a>
+                    </li>
+                    <li class="header__right__icons__item">
+                        <a href="#">
+                            <img src="../images/icons/User.svg" alt="user">
+                        </a>
+                    </li>
+                    <li class="header__right__icons__item">
+                        <a href="#" type="button">
+                            <img src="../images/icons/basket.svg" alt="basket">
+                        </a>
+                        <span class="header__right__icons__item__badge">
+                            <p>3</p>
+                        </span>
+                    </li>
+                </ul>
+                <div class="header__right__phone">
+                    <a href="#">
+                        <img src="../images/icons/Phone.svg" alt="phone">
+                    </a>
+                </div>
+                <ul class="header__right__socials">
+                    <li class="header__right__socials__item">
+                        <a href="#" title="facebook">
+                            <img src="../images/icons/Facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="header__right__socials__item">
+                        <a href="#" title="instagram">
+                            <img src="../images/icons/Instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="header__right__socials__item" title="telegram">
+                        <a href="#">
+                            <img src="../images/icons/Telegram.svg" alt="telegram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Main Section -->
+    <section id="product" class="s__product mb-5 pb-5">
+        <div class="product__wrapper mb-4">
+            <div class="container">
+                <ul class="s__breadcrumb list-unstyled">
+                    <li class="breadcrumb__item d-inline">
+                        <a href="/">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item d-inline">
+                        <a href="/">Компания</a>
+                    </li>
+                    <li class="breadcrumb__item d-inline">
+                        <a href="/">Новости</a>
+                    </li>
+                </ul>
+            </div>
+            <main class="news__section">
+                <div class="container">
+                    <div class="title">
+                        <h2>Новости</h2>
+                    </div>
+
+                    <div class="news__items__section">
+                        <div class="news__item row d-flex justify-content-between align-items-center">
+                            <div class="news__content__section col-6">
+                                <div class="news__created__date">
+                                    <span>
+                                        2 Июня 2021
+                                    </span>
+                                </div>
+                                <div class="title">
+                                    <h3>Новая коллекция мебели 2020</h3>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        Наши используемые материалы практически не подвержены воздействию сырости, со временем и в процессе сушки не трескаются и не теряют форму, а также имеют необычную и удивительно красивую светлую текстуру. 
+                                    </p>
+                                </div>
+                                <button class=" btn-read__more">
+                                    <span>
+                                        Читать все
+                                    </span>
+                                    <span>
+                                        <img src="../images/icons/Arrow right.svg" alt="">
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="news__image__section col-6">
+                                <img src="../images/news.png" alt="news image">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="news__item row d-flex justify-content-between align-items-center">
+                            <div class="news__content__section col-6">
+                                <div class="news__created__date">
+                                    <span>
+                                        2 Июня 2021
+                                    </span>
+                                </div>
+                                <div class="title">
+                                    <h3>Новая коллекция мебели 2020</h3>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        Наши используемые материалы практически не подвержены воздействию сырости, со временем и в процессе сушки не трескаются и не теряют форму, а также имеют необычную и удивительно красивую светлую текстуру. 
+                                    </p>
+                                </div>
+                                <button class=" btn-read__more">
+                                    <span>
+                                        Читать все
+                                    </span>
+                                    <span>
+                                        <img src="../images/icons/Arrow right.svg" alt="">
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="news__image__section col-6">
+                                <img src="../images/news.png" alt="news image">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="news__item row d-flex justify-content-between align-items-center">
+                            <div class="news__content__section col-6">
+                                <div class="news__created__date">
+                                    <span>
+                                        2 Июня 2021
+                                    </span>
+                                </div>
+                                <div class="title">
+                                    <h3>Новая коллекция мебели 2020</h3>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        Наши используемые материалы практически не подвержены воздействию сырости, со временем и в процессе сушки не трескаются и не теряют форму, а также имеют необычную и удивительно красивую светлую текстуру. 
+                                    </p>
+                                </div>
+                                <button class=" btn-read__more">
+                                    <span>
+                                        Читать все
+                                    </span>
+                                    <span>
+                                        <img src="../images/icons/Arrow right.svg" alt="">
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="news__image__section col-6">
+                                <img src="../images/news.png" alt="news image">
+                            </div>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="news__item row d-flex justify-content-between align-items-center">
+                            <div class="news__content__section col-6">
+                                <div class="news__created__date">
+                                    <span>
+                                        2 Июня 2021
+                                    </span>
+                                </div>
+                                <div class="title">
+                                    <h3>Новая коллекция мебели 2020</h3>
+                                </div>
+                                <div class="content">
+                                    <p>
+                                        Наши используемые материалы практически не подвержены воздействию сырости, со временем и в процессе сушки не трескаются и не теряют форму, а также имеют необычную и удивительно красивую светлую текстуру. 
+                                    </p>
+                                </div>
+                                <button class=" btn-read__more">
+                                    <span>
+                                        Читать все
+                                    </span>
+                                    <span>
+                                        <img src="../images/icons/Arrow right.svg" alt="">
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="news__image__section col-6">
+                                <img src="../images/news.png" alt="news image">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pagination">
+                        <div class="pagination__items">
+                            <div class="pagination__item d-flex justify-content-center align-items-center">
+                                <button class="btn-prev">
+                                    <img src="../images/icons/arrowleft.svg" alt="">
+                                </button>
+                                <button class="btn-active">
+                                    1
+                                </button>
+                                <button>
+                                    2
+                                </button>
+                                <button >
+                                    ...
+                                </button>
+                                <button >
+                                    9
+                                </button>
+                                <button >
+                                    10
+                                </button>
+                                <button class="btn-next">
+                                    <img src="../images/icons/arrowright.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        </div>
+    </section>
+    <!-- End Main Section -->
+
+    <!-- Footer -->
+    <footer class="s__footer mt-5">
+        <main class="footer__content">
+            <div class="container">
+                <div class="row footer__list">
+                    <ul class="col-3 footer__list__wrapper">
+                        <li class="footer__list__item">
+                            <h5 class="text-uppercase">Категории</h5>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Спальный гарнитур</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Гостиный гарнитур</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Мягкая мебель</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Офисная мебель</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Стулья</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Аксессуары</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Индивидуальный заказ</a>
+                        </li>
+                    </ul>
+                    <ul class="col-3 footer__list__wrapper">
+                        <li class="footer__list__item">
+                            <h5 class="text-uppercase">Компания</h5>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">О фабрике</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Производство</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Наши партнёры</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="col-3 footer__list__wrapper">
+                        <li class="footer__list__item">
+                            <h5 class="text-uppercase">Сервис</h5>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Мебель на заказ</a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="#">Обслуживание</a>
+                        </li>
+                    </ul>
+                    <ul class="col-3 footer__list__wrapper">
+                        <li class="footer__list__item">
+                            <h5 class="text-uppercase">Контакты</h5>
+                        </li>
+                        <li class="footer__list__item">
+                            <p class="m-0 fw-bold">+998 98 300 36 76</p>
+                        </li>
+                        <li class="footer__list__item">
+                            <p class="m-0 pe-5">Зангиатинский р-н, пос. Чигатай-Актепа, ул. Далабог</p>
+                        </li>
+                        <li class="footer__list__item">
+                            <p class="m-0 fw-bold">Мягкая мебель</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div class="footer__info">
+            <div class="container">
+                <div class="footer__info__wrapper d-flex justify-content-between">
+                    <div class="footer__info__copyright">
+                        <p class="m-0">Copyright © 2020 Sarkor Mebel. All RIghts Reserved</p>
+                    </div>
+                    <div class="footer__info__copyright d-flex align-items-center">
+                        <p class="m-0 fw-bold">Мы принимаем к оплате:</p>
+                        <div class="footer__info__payments d-flex ms-2">
+                            <a href="#" class="d-block ms-2">
+                                <img src="../images/icons/payme.png" alt="payme">
+                            </a>
+                            <a href="#" class="d-block ms-2">
+                                <img src="../images/icons/click.png" alt="click">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="../js/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/product-slide.js"></script>
+    <script type="text/javascript" src="../library/splide-3.5.8/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 3,
+            focus: 'center',
+            rewind: true,
+            pagination: false,
+        });
+
+        splide.mount();
+    </script>
+</body>
+
+</html>
