@@ -1952,6 +1952,44 @@
   height: 450px;
 }
 
+.partner__section {
+  color: #FFFFFF;
+}
+
+.partner__section .pratner__items .partner__item {
+  margin-bottom: 100px;
+}
+
+.partner__section .pratner__items .partner__item .partner__item__content .title h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 31px;
+}
+
+.partner__section .pratner__items .partner__item .partner__item__content .content {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.partner__section .pratner__items .partner__item .partner__item__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  height: 450px;
+  background-color: #FFFFFF;
+}
+
 body {
   overflow-x: hidden;
   background-color: #191919;

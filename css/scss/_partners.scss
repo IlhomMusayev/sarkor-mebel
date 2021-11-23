@@ -1,0 +1,36 @@
+.partner__section {
+    color: $white-color;
+
+    .pratner__items {
+
+        .partner__item {
+            margin-bottom: 100px;
+            .partner__item__content {
+                .title {
+                    h3 {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 32px;
+                        line-height: 31px;
+                    }
+                }
+
+                .content {
+                    margin-top: 30px;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+            .partner__item__image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 100%;
+                height: 450px;
+                background-color: $white-color;
+            }
+        }
+    }
+}
