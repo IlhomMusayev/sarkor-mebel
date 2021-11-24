@@ -1,13 +1,13 @@
-.services__section {
+.services__section{
     .accordion {
         .accordion-item {
             border: none;
         }
-
+    
         .accordion-header {
             background-color: $dark-color;
             border-top: 1px solid #fff;
-
+    
             .btn_accordion {
                 background-color: $dark-color;
                 color: #fff;
@@ -19,7 +19,7 @@
                 font-size: 24px;
                 line-height: 23px;
                 text-transform: uppercase;
-
+    
                 .plusminus {
                     position: relative;
                     width: 25px;
@@ -58,14 +58,14 @@
                 }
             }
             span{
-
+    
             }
-
+    
         }
-
+    
         .accordion-body {
             background-color: $dark-color;
-
+    
             p {
                 color: $white-color;
                 font-style: normal;

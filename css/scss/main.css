@@ -2372,6 +2372,337 @@
   line-height: 26px;
 }
 
+.contact__section {
+  color: #fff;
+}
+
+.contact__section .title {
+  margin-bottom: 50px;
+}
+
+.contact__section .title h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-item {
+  border: none;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-header {
+  background-color: #191919;
+  border-bottom: 1px solid #fff;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion {
+  background-color: #191919;
+  color: #fff;
+  width: 100%;
+  border: none;
+  text-align: start;
+  padding: 30px 0;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 23px;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus.active:before {
+  -webkit-transform: translatey(-50%) rotate(-90deg);
+          transform: translatey(-50%) rotate(-90deg);
+  opacity: 0;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus.active:after {
+  -webkit-transform: translatey(-50%) rotate(0);
+          transform: translatey(-50%) rotate(0);
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus:before, .contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus:after {
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transition: .35s;
+  transition: .35s;
+  width: 100%;
+  height: 3px;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus:before {
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus:after {
+  -webkit-transform: translatey(-50%) rotate(90deg);
+          transform: translatey(-50%) rotate(90deg);
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-body {
+  background-color: #191919;
+  padding: 20px 0;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .brachne__item .branche__name h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .brachne__item .branche__address .working__tim {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .brachne__item .branche__address .address {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .brachne__item .branche__address .phone__number {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .active h4,
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .active span,
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .active h5,
+.contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .active p {
+  font-weight: bold;
+}
+
+.contact__section .contact__main__section .contact__data__section .maps iframe {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: co;
+     object-fit: co;
+}
+
+.contact__section .contact__main__section .contact__data__section .branches__sarkon {
+  margin-top: 50px;
+}
+
+.contact__section .contact__main__section .contact__data__section .branches__sarkon .title {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.contact__section .contact__main__section .contact__data__section .branches__sarkon .title h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+  text-transform: none;
+}
+
+.contact__section .contact__main__section .contact__data__section .branches__sarkon .address__data .address__branche h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contact__section .contact__main__section .contact__data__section .branches__sarkon .address__data .working__time {
+  text-align: right;
+}
+
+.contact__section .contact__main__section .contact__data__section .branches__sarkon .address__data .working__time h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.contact__section .contact__main__section .contact__data__section .branches__sarkon .phone__number {
+  margin-top: 5px;
+}
+
+.contact__section .contact__main__section .contact__data__section .branches__sarkon .phone__number h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.contact__section .contact__main__section .contact__data__section .branches__sarkon .branche__photo {
+  margin-top: 30px;
+}
+
+.contact__section .contact__main__section .contact__data__section .branches__sarkon .branche__photo img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact__section .appointment__section {
+  margin-top: 200px;
+}
+
+.contact__section .appointment__section .container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact__section .appointment__section .container .appointment__content .title h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.contact__section .appointment__section .container .appointment__content .contnent p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.contact__section .appointment__section .container .appointment__content .call-me__section .title h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 21px;
+}
+
+.contact__section .appointment__section .container .appointment__content .call-me__section .title .phone__number {
+  margin-top: 20px;
+}
+
+.contact__section .appointment__section .container .appointment__content .call-me__section .title .phone__number h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 29px;
+}
+
+.contact__section .appointment__section .container .appointment__content .call-me__section .title p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.contact__section .appointment__section .container .appointment__content .appointment-form__section {
+  margin-top: 20px;
+}
+
+.contact__section .appointment__section .container .appointment__content .appointment-form__section .appointment-form__input {
+  display: block;
+  padding: 19px;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.contact__section .appointment__section .container .appointment__content .appointment-form__section .appointment-form__input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.contact__section .appointment__section .container .appointment__content .appointment-form__section .appointment-form__input:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.contact__section .appointment__section .container .appointment__content .appointment-form__section .appointment-form__input::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.contact__section .appointment__section .container .appointment__content .appointment-form__section .appointment-form__input::placeholder {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.contact__section .appointment__section .container .appointment__content .appointment-form__section .btn-apponitment {
+  padding: 20px 32px;
+  background: #A67C52;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+.contact__section .appointment__section .container .appointment__content .appointment-form__section .btn-apponitment:hover {
+  background: #8b6238;
+}
+
+.contact__section .appointment__section .container .appointment__image {
+  position: relative;
+}
+
+.contact__section .appointment__section .container .appointment__image .image img {
+  width: 130%;
+}
+
+.contact__section .appointment__section .container .appointment__image .reseption__about {
+  position: absolute;
+  width: 1000px;
+  bottom: 0%;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 5px;
+  padding: 20px 50px;
+  color: #000000;
+}
+
+.contact__section .appointment__section .container .appointment__image .reseption__about .name h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.contact__section .appointment__section .container .appointment__image .reseption__about .level {
+  width: 40%;
+}
+
+.contact__section .appointment__section .container .appointment__image .reseption__about .level p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  color: #000000;
+}
+
 body {
   overflow-x: hidden;
   background-color: #191919;

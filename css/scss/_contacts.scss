@@ -1,0 +1,356 @@
+.contact__section {
+    color: #fff;
+
+    .title {
+        margin-bottom: 50px;
+
+        h3 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 38px;
+            text-transform: uppercase;
+
+        }
+    }
+
+    .contact__main__section {
+
+        .contact__faq__section {
+            .accordion {
+                .accordion-item {
+                    border: none;
+                }
+
+                .accordion-header {
+                    background-color: $dark-color;
+                    border-bottom: 1px solid #fff;
+
+                    .btn_accordion {
+                        background-color: $dark-color;
+                        color: #fff;
+                        width: 100%;
+                        border: none;
+                        text-align: start;
+                        padding: 30px 0;
+                        font-weight: 300;
+                        font-size: 22px;
+                        line-height: 23px;
+
+                        .plusminus {
+                            position: relative;
+                            width: 25px;
+                            height: 25px;
+                            // cursor: pointer;/
+
+                            &.active {
+                                &:before {
+                                    transform: translatey(-50%) rotate(-90deg);
+                                    opacity: 0;
+                                }
+
+                                &:after {
+                                    transform: translatey(-50%) rotate(0);
+                                }
+                            }
+
+                            &:before,
+                            &:after {
+                                content: "";
+                                display: block;
+                                background-color: $white-color;
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                transition: .35s;
+                                width: 100%;
+                                height: 3px;
+                            }
+
+                            &:before {
+                                transform: translatey(-50%);
+                            }
+
+                            &:after {
+                                transform: translatey(-50%) rotate(90deg);
+                            }
+
+                        }
+                    }
+
+                    span {}
+
+                }
+
+                .accordion-body {
+                    background-color: $dark-color;
+                    padding: 20px 0;
+
+                    .region__branches {
+                        .brachne__item {
+
+                            .branche__name {
+                                h4 {
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 15px;
+
+                                }
+                            }
+
+                            .branche__address {
+                                .working__tim {
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 15px;
+                                }
+
+                                .address {
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 20px;
+
+                                }
+
+                                .phone__number {
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                        }
+
+                        .active {
+
+                            h4,
+                            span,
+                            h5,
+                            p {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact__data__section {
+            .maps {
+                iframe{
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+            
+            .branches__sarkon {
+                margin-top: 50px;
+                .title {
+                    padding: 0;
+                    margin: 0 0 20px 0;
+                    h3 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 23px;
+                        text-transform: none;
+                    }
+                }
+
+                .address__data {
+
+                    .address__branche {
+                        h4 {
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+
+                    .working__time {
+                        text-align: right;
+                        h3 {
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+
+                .phone__number {
+                    margin-top: 5px;
+                    h4 {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 15px;
+                    }
+                }
+                .branche__photo{
+                    margin-top: 30px;
+                    img{
+                        width: 100%;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .appointment__section {
+        margin-top: 200px;
+        // padding: 100px 0;
+
+        .container {
+            width: 100%;
+            padding-right: var(--bs-gutter-x, 0.75rem);
+            padding-left: var(--bs-gutter-x, 0.75rem);
+            margin-right: auto;
+            margin-left: auto;
+
+            .appointment__content {
+                .title {
+                    h2 {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 40px;
+                        line-height: 46px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .contnent {
+                    p {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 22px;
+                        line-height: 32px;
+                    }
+                }
+
+                .call-me__section {
+                    .title {
+                        h4 {
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 21px;
+                        }
+
+                        .phone__number {
+                            margin-top: 20px;
+
+                            h3 {
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 30px;
+                                line-height: 29px;
+                            }
+                        }
+
+                        p {
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 32px;
+                        }
+                    }
+
+                }
+
+                .appointment-form__section {
+                    margin-top: 20px;
+
+                    .appointment-form__input {
+                        display: block;
+                        padding: 19px;
+                        width: 80%;
+                        background: rgba(255, 255, 255, 0.1);
+                        border: 1px solid rgba(255, 255, 255, 0.5);
+                        box-sizing: border-box;
+                        backdrop-filter: blur(6px);
+                        border-radius: 5px;
+                        font-size: 16px;
+                        color: #fff;
+                        margin-top: 10px;
+                    }
+
+                    .appointment-form__input::placeholder {
+                        color: $white-color;
+                        font-size: 16px;
+                    }
+
+                    .btn-apponitment {
+                        padding: 20px 32px;
+                        background: #A67C52;
+                        color: $white-color;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 15px;
+                        border-radius: 5px;
+                        border: none;
+                        margin-top: 30px;
+                    }
+
+                    .btn-apponitment:hover {
+                        background: #8b6238;
+                    }
+                }
+
+            }
+
+            .appointment__image {
+                position: relative;
+
+                .image {
+                    img {
+                        width: 130%;
+                    }
+                }
+
+                .reseption__about {
+                    position: absolute;
+                    width: 1000px;
+                    bottom: 0%;
+                    left: 10%;
+                    background: rgba(255, 255, 255, 0.3);
+                    backdrop-filter: blur(20px);
+                    border-radius: 5px;
+                    padding: 20px 50px;
+                    color: $black-color;
+
+                    .name {
+                        h4 {
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 40px;
+                            line-height: 46px;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .level {
+                        width: 40%;
+
+                        p {
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 32px;
+                            color: $black-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
