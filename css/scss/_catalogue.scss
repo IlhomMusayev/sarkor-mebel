@@ -1,7 +1,7 @@
 @import "colors";
 
 .s__catalogue {
-  height: 50vh;
+  height: 100%;
   position: relative;
 }
 
@@ -37,5 +37,10 @@
       padding: 20px 0;
       width: 70%;
     }
+  }
+}
+@media (min-width: 768px) {
+  .cotalog__img{
+    width: 100%;
   }
 }

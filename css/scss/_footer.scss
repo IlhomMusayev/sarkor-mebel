@@ -49,3 +49,55 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    &__content {
+      border-top: .8px solid $white-color;
+      border-bottom: .8px solid $white-color;
+      text-align: center;
+    }
+    &__list {
+      margin: 80px 0;
+      &__item {
+        list-style: none;
+        margin: 20px 0;
+        h5 {
+          color: $secondary-color;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+        a {
+          text-decoration: none;
+          color: $white-color;
+        }
+        a:hover {
+          color: $secondary-color;
+          transition: .3s;
+        }
+        a:active {
+          color: $secondary-color;
+        }
+        a:focus {
+          color: $secondary-color;
+        }
+        p {
+          color: $white-color;
+        }
+      }
+    }
+    &__info {
+      position: relative;
+      text-align: center;
+      &__wrapper {
+        margin: 33px 0;
+      }
+      &__copyright {
+        text-align: center;
+        p {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}

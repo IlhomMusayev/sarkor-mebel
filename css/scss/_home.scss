@@ -85,3 +85,97 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background-color: #000000;
+  }
+  
+  .mousewheel {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 85%;
+    z-index: 100;
+    text-align: center;
+    a {
+      display: block;
+      height: 100%;
+    }
+  }
+  
+  .s__home {
+    .carousel {
+      height: 100vh;
+      &__caption {
+        position: none;
+        left: 0;
+        top: 60%;
+        width: 100%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: $white-color;
+        text-align: left;
+        z-index: 3;
+        h1 {
+          font-size: 35.58px;
+          font-weight: bold;
+        }
+        a {
+          display: block;
+          margin-top: 20px;
+          color: $white-color;
+          text-decoration: none;
+          font-weight: bolder;
+          font-size: 17px;
+          img {
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+          }
+        }
+        a:hover {
+          opacity: 70%;
+          transition: .5s;
+        }
+      }
+      &-inner {
+        height: 100%;
+      }
+      &-item {
+        height: 100%;
+        img {
+          height: 100%;
+          z-index: -2;
+          width: 100%;
+          object-fit:cover;
+        }
+      }
+      &__controller {
+        &__wrapper {
+          display: block;
+          position: absolute;
+          top: 90%;
+          left: 0;
+          z-index: 100;
+          .btn:focus {
+            outline: none;
+            box-shadow: none;
+          }
+          .btn{
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

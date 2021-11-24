@@ -11,6 +11,11 @@
       transform: scale(1.05);
       transition: .4s;
     }
+    img{
+      width:100%;
+      height:350px;
+      object-fit: cover;
+    }
   }
   &__wrapper {
     padding-top: 125px;
@@ -57,4 +62,65 @@
   .container {
     max-width: 1200px;
   }
+}
+
+@media (max-width: 768px) {
+  
+.s__categories {
+  min-height: 100vh;
+  position: relative;
+}
+
+.categories {
+  &__image {
+    img:hover {
+      transform: scale(1.05);
+      transition: .4s;
+    }
+    img{
+      width:100%;
+      height:350px;
+      object-fit: cover;
+    }
+  }
+  &__wrapper {
+    padding-top: 125px;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: $main-color;
+    background-image: url("../../images/icons/Pattern.svg");
+    z-index: -1;
+  }
+  &__header {
+    color: $white-color;
+    padding-left: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &__text {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+  &__content {
+    .row {
+      margin: 0;
+    }
+  }
+  &__caption {
+    display: block;
+    margin-top: 10px;
+    a {
+      color: $white-color;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
 }

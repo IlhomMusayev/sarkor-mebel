@@ -97,3 +97,18 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .header__nav__list{
+    display: none;
+  }
+  .header__right{
+    display: none;
+  }
+  .hidden__nav{
+    width: 100%;
+  }
+  .header__logo{
+    left: 20px;
+  }
+}

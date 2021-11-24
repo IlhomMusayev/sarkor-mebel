@@ -52,6 +52,12 @@
             </ul>
         </nav>
 
+        <li class="mini_menu_btn">
+            <a type="button" onclick="openMiniMenu()">
+                <img src="images/icons/menu.svg" alt="menu">
+            </a>
+        </li>
+
         <div class="hidden__nav" id="hidden-nav">
             <button class="hidden__nav__button btn shadow-none" id="nav-close" onclick="closeMenu()">
                 <img src="images/icons/Close.svg" alt="X">
@@ -178,7 +184,7 @@
                 <div class="carousel-item active">
                     <div class="overlay"></div>
                     <img src="images/background.png" class="d-block w-100" alt="background">
-                    <div class="carousel__caption" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="carousel__caption container" data-aos="fade-up" data-aos-duration="1500">
                         <h1>Мебель премиум-класса.</h1>
                         <a href="#">
                             Посмотреть
@@ -189,7 +195,7 @@
                 <div class="carousel-item">
                     <div class="overlay"></div>
                     <img src="images/background2.jpg" class="d-block w-100" alt="background">
-                    <div class="carousel__caption" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="carousel__caption container" data-aos="fade-up" data-aos-duration="1500">
                         <h1>Second slide label</h1>
                         <a href="#">
                             Посмотреть
@@ -200,7 +206,7 @@
                 <div class="carousel-item">
                     <div class="overlay"></div>
                     <img src="images/background3.jpg" class="d-block w-100" alt="background">
-                    <div class="carousel__caption" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="carousel__caption container" data-aos="fade-up" data-aos-duration="1500">
                         <h1>Third slide label</h1>
                         <a href="#">
                             Посмотреть
@@ -209,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel__controller__wrapper">
+            <div class="carousel__controller__wrapper container">
                 <button class="carousel__controller btn" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
                     <img src="images/icons/arrow.svg" alt="left">
                 </button>
@@ -234,17 +240,17 @@
                 </header>
                 <main class="categories__content">
                     <div class="row mb-4" data-aos="fade-up">
-                        <div class="col-7 p-0" >
+                        <div class="col-12 col-lg-7 p-0" >
                             <div class="categories__image">
-                                <a href="#" class="d-block"><img src="images/cat1.png" alt="cat1"></a>
+                                <a href="#" class="d-block"><img src="images/cat1.png" class="w-100" alt="cat1"></a>
                             </div>
                             <span class="categories__caption">
                                 <a href="#" class="d-block">Спальный гарнитур</a>
                             </span>
                         </div>
-                        <div class="col-5 p-0">
+                        <div class="col-12 col-lg-5 p-0">
                             <div class="categories__image">
-                                <a href="#" class="d-block"><img src="images/cat2.png" alt="cat2"></a>
+                                <a href="#" class="d-block"><img src="images/cat2.png" class="w-lg-100"  alt="cat2"></a>
                             </div>
                             <span class="categories__caption">
                                 <a href="#" class="d-block">Спальный гарнитур</a>
@@ -252,7 +258,7 @@
                         </div>
                     </div>
                     <div class="row mb-4" data-aos="fade-up">
-                        <div class="col-4 p-0">
+                        <div class="col-12 col-lg-4 p-0">
                             <div class="categories__image">
                                 <a href="#" class="d-block"><img src="images/cat3.png" alt="cat3"></a>
                             </div>
@@ -260,7 +266,7 @@
                                 <a href="#" class="d-block">Спальный гарнитур</a>
                             </span>
                         </div>
-                        <div class="col-4 p-0">
+                        <div class="col-12 col-lg-4 p-0">
                             <div class="categories__image">
                                 <a href="#"><img src="images/cat4.png" alt="cat4"></a>
                             </div>
@@ -268,7 +274,7 @@
                                 <a href="#" class="d-block">Спальный гарнитур</a>
                             </span>
                         </div>
-                        <div class="col-4 p-0">
+                        <div class="col-12 col-lg-4 p-0">
                             <div class="categories__image">
                                 <a href="#" class="d-block"><img src="images/cat5.png" alt="cat5"></a>
                             </div>
@@ -278,7 +284,7 @@
                         </div>
                     </div>
                     <div class="row" data-aos="fade-up">
-                        <div class="col-5 p-0">
+                        <div class="col-12 col-lg-5 p-0">
                             <div class="categories__image">
                                 <a href="#" class="d-block"><img src="images/cat6.png" alt="cat6"></a>
                             </div>
@@ -286,7 +292,7 @@
                                 <a href="#">Спальный гарнитур</a>
                             </span>
                         </div>
-                        <div class="col-7 p-0">
+                        <div class="col-12 col-lg-7 p-0">
                             <div class="categories__image">
                                 <a href="#" class="d-block"><img src="images/cat7.png" alt="cat7"></a>
                             </div>
@@ -306,8 +312,8 @@
                 <header class="categories__header mt-5 pt-5" data-aos="fade-up">
                     <h3 class="categories__header__text">Каталог</h3>
                 </header>
-                <ul class="recommend__list m-0" data-aos="fade-up">
-                    <li class="recommend__list__item recommend__list--active">
+                <ul class="recommend__list m-0 overflow-auto" data-aos="fade-up">
+                    <li class="recommend__list__item recommend__list--active d-block">
                         <a type="button" id="mebel">
                             Мягкая мебель
                         </a>
@@ -343,7 +349,7 @@
                         <div class="recommend__card" data-aos="fade-up">
                             <div class="recommend__card__image position-relative">
                                 <button class="btn d-flex align-items-center justify-content-center shadow-none position-absolute">
-                                    <img src="images/icons/star.svg" alt="star">
+                                    <img class="star__icon" src="images/icons/star.svg" alt="star">
                                 </button>
                                 <img src="images/card-sofa.png" alt="sofa">
                             </div>
@@ -361,7 +367,7 @@
                         <div class="recommend__card" data-aos="fade-up">
                             <div class="recommend__card__image position-relative">
                                 <button class="btn d-flex align-items-center justify-content-center shadow-none position-absolute">
-                                    <img src="images/icons/star.svg" alt="star">
+                                    <img class="star__icon" src="images/icons/star.svg" alt="star">
                                 </button>
                                 <img src="images/card-sofa2.png" alt="sofa">
                             </div>
@@ -379,7 +385,7 @@
                         <div class="recommend__card" data-aos="fade-up">
                             <div class="recommend__card__image position-relative">
                                 <button class="btn d-flex align-items-center justify-content-center shadow-none position-absolute">
-                                    <img src="images/icons/star.svg" alt="star">
+                                    <img class="star__icon" src="images/icons/star.svg" alt="star">
                                 </button>
                                 <img src="images/card-sofa3.png" alt="sofa">
                             </div>
@@ -397,7 +403,7 @@
                         <div class="recommend__card" data-aos="fade-up">
                             <div class="recommend__card__image position-relative">
                                 <button class="btn d-flex align-items-center justify-content-center shadow-none position-absolute">
-                                    <img src="images/icons/star.svg" alt="star">
+                                    <img class="star__icon" src="images/icons/star.svg" alt="star">
                                 </button>
                                 <img src="images/card-sofa4.png" alt="sofa">
                             </div>
@@ -415,7 +421,7 @@
                         <div class="recommend__card" data-aos="fade-up">
                             <div class="recommend__card__image position-relative">
                                 <button class="btn d-flex align-items-center justify-content-center shadow-none position-absolute">
-                                    <img src="images/icons/star.svg" alt="star">
+                                    <img class="star__icon" src="images/icons/star.svg" alt="star">
                                 </button>
                                 <img src="images/card-sofa5.png" alt="sofa">
                             </div>
@@ -433,7 +439,7 @@
                         <div class="recommend__card" data-aos="fade-up">
                             <div class="recommend__card__image position-relative">
                                 <button class="btn d-flex align-items-center justify-content-center shadow-none position-absolute">
-                                    <img src="images/icons/star.svg" alt="star">
+                                    <img class="star__icon" src="images/icons/star.svg" alt="star">
                                 </button>
                                 <img src="images/card-sofa6.png" alt="sofa">
                             </div>
@@ -458,14 +464,16 @@
     <section id="catalogue" class="s__catalogue">
         <div class="catalogue__overlay"></div>
         <div class="container h-100">
-            <div class="catalogue__wrapper d-flex align-items-center h-100">
+            <div class="catalogue__wrapper d-lg-flex align-items-center h-100">
                 <div class="catalogue__content" data-aos="fade-up">
                     <h4>каталог 2021</h4>
-                    <p>Здесь вы можете смотреть и скачать действующий каталог Sarkor Mebel.</p>
-                    <a type="button" class="recommend__button text-uppercase">Скачать каталог</a>
+                    <div class="content">
+                        <p>Здесь вы можете смотреть и скачать действующий каталог Sarkor Mebel.</p>
+                        <a type="button" class="recommend__button text-uppercase">Скачать каталог</a>
+                    </div>
                 </div>
                 <div class="catalogue__image" data-aos="fade-up">
-                    <img src="images/phone_mockup.png" alt="phones" class="h-100">
+                    <img src="images/phone_mockup.png" alt="phones" class="cotalog__img h-100">
                 </div>
             </div>
         </div>
@@ -473,7 +481,7 @@
 
     <section id="about" class="s__about">
         <div class="container">
-            <div class="about__header d-flex justify-content-between">
+            <div class="about__header d-lg-flex justify-content-between">
                 <div class="about__header__year" data-aos="fade-up">
                     <h1>27</h1>
                     <span>более</span>
@@ -481,7 +489,7 @@
                 <div class="about__header__content d-flex flex-column justify-content-between" data-aos="fade-up">
                     <h4>лет на рынке мебельная фабрика SARKOR MEBEL</h4>
                     <p>Наша фабрика – по сути, является пионерами, мы сами задавали планку и формировали рынок со всей необходимой для этого ответственностью</p>
-                    <a type="button" class="button__read">
+                    <a type="button" class="button__read d-flex align-items-center">
                         <p>Читать все</p>
                         <img src="images/icons/arrow-right.svg" alt="arrow">
                     </a>
@@ -489,7 +497,7 @@
             </div>
             <div class="about__content">
                 <ul class="about__content__list row">
-                    <li class="about__content__list__item col-6" data-aos="fade-right">
+                    <li class="about__content__list__item col-12 col-lg-6" data-aos="fade-right">
                         <div class="about__content__icon">
                             <img src="images/icons/wood.svg" alt="wood">
                         </div>
@@ -500,7 +508,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="about__content__list__item col-6" data-aos="fade-left">
+                    <li class="about__content__list__item col-12 col-lg-6" data-aos="fade-left">
                         <div class="about__content__icon">
                             <img src="images/icons/wallet.svg" alt="wallet">
                         </div>
@@ -511,7 +519,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="about__content__list__item col-6" data-aos="fade-right">
+                    <li class="about__content__list__item col-12 col-lg-6" data-aos="fade-right">
                         <div class="about__content__icon">
                             <img src="images/icons/seat.svg" alt="seat">
                         </div>
@@ -522,7 +530,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="about__content__list__item col-6" data-aos="fade-left">
+                    <li class="about__content__list__item col-12 col-lg-6" data-aos="fade-left">
                         <div class="about__content__icon">
                             <img src="images/icons/medal.svg" alt="medal">
                         </div>
@@ -541,7 +549,7 @@
         <main class="footer__content">
             <div class="container">
                 <div class="row footer__list">
-                    <ul class="col-3 footer__list__wrapper">
+                    <ul class="col-12 col-lg-3  footer__list__wrapper">
                         <li class="footer__list__item">
                             <h5 class="text-uppercase">Категории</h5>
                         </li>
@@ -567,7 +575,7 @@
                             <a href="#">Индивидуальный заказ</a>
                         </li>
                     </ul>
-                    <ul class="col-3 footer__list__wrapper">
+                    <ul class="col-12 col-lg-3 footer__list__wrapper">
                         <li class="footer__list__item">
                             <h5 class="text-uppercase">Компания</h5>
                         </li>
@@ -587,7 +595,7 @@
                             <a href="#">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="col-3 footer__list__wrapper">
+                    <ul class="col-12 col-lg-3 footer__list__wrapper">
                         <li class="footer__list__item">
                             <h5 class="text-uppercase">Сервис</h5>
                         </li>
@@ -598,7 +606,7 @@
                             <a href="#">Обслуживание</a>
                         </li>
                     </ul>
-                    <ul class="col-3 footer__list__wrapper">
+                    <ul class="col-12 col-lg-3  footer__list__wrapper">
                         <li class="footer__list__item">
                             <h5 class="text-uppercase">Контакты</h5>
                         </li>
@@ -606,7 +614,7 @@
                             <p class="m-0 fw-bold">+998 98 300 36 76</p>
                         </li>
                         <li class="footer__list__item">
-                            <p class="m-0 pe-5">Зангиатинский р-н, пос. Чигатай-Актепа, ул. Далабог</p>
+                            <p class="m-0 pe-lg-5">Зангиатинский р-н, пос. Чигатай-Актепа, ул. Далабог</p>
                         </li>
                         <li class="footer__list__item">
                             <p class="m-0 fw-bold">Мягкая мебель</p>
@@ -617,7 +625,7 @@
         </main>
         <div class="footer__info">
             <div class="container">
-                <div class="footer__info__wrapper d-flex justify-content-between">
+                <div class="footer__info__wrapper d-lg-flex justify-content-between">
                     <div class="footer__info__copyright">
                         <p class="m-0">Copyright © 2020 Sarkor Mebel. All RIghts Reserved</p>
                     </div>
