@@ -28,3 +28,27 @@
     left: 8px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    &__item {
+      color: $white-color;
+      font-size: 14px;
+    }
+    &__item + &__item {
+      padding-left: 25px;
+      position: relative;
+    }
+    &__item + &__item:before {
+      background-image: url("../../images/icons/small-arrow.svg");
+      background-repeat: no-repeat;
+      width: 14px;
+      height: 14px;
+      content: " ";
+      position: absolute;
+      top: 4px;
+      left: 8px;
+    }
+  }
+}
