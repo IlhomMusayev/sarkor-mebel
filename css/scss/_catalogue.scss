@@ -21,6 +21,9 @@
   }
   &__image {
     height: 90%;
+    img{
+      width: 100%;
+    }
   }
   &__content {
     h4 {
@@ -39,8 +42,57 @@
     }
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .cotalog__img{
     width: 100%;
+  }
+  .s__catalogue {
+    height: 100%;
+    position: relative;
+  }
+  
+  .catalogue {
+    position: relative;
+    &__wrapper {
+      padding: 50px 0;
+    }
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $main-color;
+      background-image: url("../../images/icons/Pattern.svg");
+      z-index: -1;
+    }
+    &__image {
+      height: 90%;
+      order: 1;
+      img{
+        width: 100%;
+      }
+    }
+    &__content {
+      order: 2;
+      h4 {
+        color: $white-color;
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        padding-bottom: 20px;
+      }
+      .content{
+        // position: absolute;
+        // bottom: 0;
+        p {
+          color: $white-color;
+          font-weight: normal;
+          font-size: 20px;
+          padding: 20px 0;
+          width: 70%;
+        }
+      }
+    }
   }
 }

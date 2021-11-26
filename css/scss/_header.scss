@@ -102,8 +102,112 @@
   .header__nav__list{
     display: none;
   }
-  .header__right{
-    display: none;
+  .header {
+    &__logo {
+      position: absolute;
+      top: 50%;
+      left: 80px;
+      transform: translateY(-50%);
+      a {
+        display: block;
+      }
+    }
+    &__nav {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      display: none;
+      &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        &__item {
+          font-size: 18px;
+          padding-right: 40px;
+          text-decoration: none;
+          color: $white-color;
+        }
+        &__item:hover {
+          color: $secondary-color;
+          transition: .5s;
+        }
+      }
+    }
+    &__right {
+      display: none;
+      position: fixed;
+      background-color: none;
+      background: none;
+      backdrop-filter: none;
+      width: 0%;
+      height: 0%;
+      border-left: none;
+      z-index: 9999;
+      &__wrapper {
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 36px 0;
+        z-index: 100;
+      }
+      &__icons {
+        padding-left: 0;
+        margin-bottom: 0;
+        display: flex;
+        position: absolute;
+        bottom: 18%;
+        margin-right: 700px;
+        &__item {
+          list-style: none;
+          position: relative;
+          margin-right: 15px;
+          &__badge {
+            background-color: $secondary-color;
+            position: absolute;
+            display: block;
+            bottom: -5px;
+            left: 50%;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            p {
+              text-align: center;
+              font-size: 12px;
+              color: $white-color;
+            }
+          }
+        }
+        &__item:first-child {
+          margin: 0;
+          display: none;
+        }
+      }
+      &__phone{
+        position: absolute;
+        bottom: 40%;
+        margin-right: 100px;
+
+      }
+      &__socials {
+        padding-left: 0;
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 10%;
+        margin-right: 100px;
+        img{
+          width: 40px;
+        }
+        &__item {
+          list-style: none;
+          margin: 20px 0;
+        }
+      }
+    }
   }
   .hidden__nav{
     width: 100%;
