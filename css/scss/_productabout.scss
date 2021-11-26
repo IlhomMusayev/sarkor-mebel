@@ -3,7 +3,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    .row {
+        --bs-gutter-x: 0.5em;
+        --bs-gutter-y: 0;
+    }
     #content-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -180,6 +183,10 @@
                         border-radius: 5px;
                         border: none;
                     }
+                    :hover{
+                        background: #8b6238;
+                        transition: 0.3s;
+                    }
                 }
             }
         }
@@ -319,6 +326,9 @@
                             fill: #fff;
                         }
                     }
+                    .splide__arrow--prev:hover{
+                        box-shadow: 0px 0px 10px #ac8d6d;
+                    }
 
                     .splide__arrow--next {
                         right: -4%;
@@ -330,6 +340,9 @@
                         svg {
                             fill: #fff;
                         }
+                    }
+                    .splide__arrow--next:hover{
+                        box-shadow: 0px 0px 10px #ac8d6d;
                     }
                 }
             }
@@ -391,6 +404,9 @@
                             fill: #fff;
                         }
                     }
+                    .splide__arrow--prev:hover{
+                        box-shadow: 0px 0px 10px #ac8d6d;
+                    }
 
                     .splide__arrow--next {
                         right: -4%;
@@ -402,6 +418,9 @@
                         svg {
                             fill: #fff;
                         }
+                    }
+                    .splide__arrow--next:hover{
+                        box-shadow: 0px 0px 10px #ac8d6d;
                     }
                 }
             }
@@ -834,5 +853,435 @@
 
     .btn-apponitment:hover {
         background: #8b6238;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .product__content {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+        .product__about {
+            margin-right: 0px;
+
+            .column {
+                #featured {
+                    width: 100%;
+                    height: 300px;
+                }
+
+            }
+
+            .product__description {
+                width: 100%;
+
+                .title {
+                    margin-bottom: 20px;
+
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+
+            .product__content__about {
+                padding-left: 3px;
+
+                .product__category__name {
+                    h3 {
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+
+                .product__name {
+                    h2 {
+                        font-size: 28px;
+                    }
+                }
+
+                .product__price {
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+
+                .product__add__cart__section {
+                    margin-top: 30px;
+
+                    .cart__count__section {
+                        .title {
+                            font-size: 12px;
+                            line-height: 0px;
+                        }
+
+                        .cart__count {
+                            margin-left: 0;
+                            width: 116px;
+                            flex-direction: column;
+
+                            button {
+                                order: 1;
+                                padding: 10px 10px;
+                            }
+
+                            input {
+                                order: 2;
+                                padding: 10px 5px;
+                                width: 45px;
+                                font-size: 16px;
+                            }
+
+                            .plus {
+                                img {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                    }
+
+                    .add__cart__button {
+                        width: 100%;
+                        margin-right: 10px;
+
+                        button {
+                            width: 100%;
+                            padding: 20px 15px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .product__specifications {
+                margin-top: 40px;
+
+                .title {
+                    h2 {
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .product__specifications__item {
+                    h4 {
+                        font-size: 16px;
+
+                        span {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .product__payments {
+                    margin-top: 30px;
+
+                    .list__items {
+                        padding-left: 20px;
+
+                        .title {
+                            list-style: none;
+
+                            h3 {
+                                font-size: 20px;
+                                line-height: 21px;
+                                margin-bottom: 20px;
+                            }
+                        }
+
+                        .list__item {
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+
+                .product__shiping {
+                    margin-top: 30px;
+
+                    .list__items {
+                        padding-left: 20px;
+
+                        .title {
+                            list-style: none;
+
+                            h3 {
+                                font-size: 22px;
+                                line-height: 21px;
+                                margin-bottom: 20px;
+                            }
+                        }
+
+                        .list__item {
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fabrics__for__furniture {
+            margin-top: 100px;
+            background-color: #09432B;
+            background-image: url("../../images/icons/Pattern.svg");
+            z-index: -1;
+            padding: 100px 0;
+            padding-bottom: 150px;
+            .row {
+                padding: 0;
+                margin: 0 auto;
+
+                .furniture__contents {
+                    .title {
+
+                        h3 {
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 26px;
+                            line-height: 54px;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .content {
+                        margin-top: 40px;
+
+                        p {
+                            width: 100%;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+
+                .furniture__galery {
+                    position: relative;
+                    img {
+                        width: 100%;
+                    }
+
+                    .splide {
+                        width: 100%;
+
+                        .splide__arrows {
+
+                            .splide__arrow--prev {
+                                position: absolute;
+                                top: 110%;
+                                left: 35%;
+                                background-color: #A67C52;
+                                opacity: 1;
+                                width: 40px;
+                                height: 40px;
+
+                                svg {
+                                    fill: #fff;
+                                }
+                            }
+
+                            .splide__arrow--next {
+                                position: absolute;
+                                top: 110%;
+                                right: 35%;
+                                background-color: #A67C52;
+                                opacity: 1;
+                                width: 40px;
+                                height: 40px;
+
+                                svg {
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+        .fabrics__for__furniture2 {
+            margin: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .row {
+                padding: 0;
+                margin: 0 auto;
+
+                .furniture__contents {
+                    order: 1;
+
+                    .title {
+                        h3 {
+                            font-weight: bold;
+                            font-size: 26px;
+                            line-height: none;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .content {
+                        // margin-top: 40px;
+
+                        p {
+                            width: 100%;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+
+                .furniture__galery {
+                    order: 2;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .splide2 {
+                        position: relative;
+                        width: 100%;
+
+                        .splide__arrows {
+
+                            .splide__arrow--prev {
+                                position: absolute;
+                                top: 110%;
+                                left: 35%;
+                                background-color: #A67C52;
+                                opacity: 1;
+                                width: 40px;
+                                height: 40px;
+
+                                svg {
+                                    fill: #fff;
+                                }
+                            }
+
+                            .splide__arrow--next {
+                                position: absolute;
+                                top: 110%;
+                                right: 35%;
+                                background-color: #A67C52;
+                                opacity: 1;
+                                width: 40px;
+                                height: 40px;
+
+                                svg {
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .appointment__section {
+            padding: 80px 0;
+
+            .container {
+                .appointment__content {
+                    .title {
+                        h2 {
+                            font-size: 26px;
+
+                        }
+                    }
+
+                    .contnent {
+                        p {
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                    }
+
+                    .call-me__section {
+                        .title {
+                            h4 {
+                                font-size: 16px;
+                                line-height: 15px;
+                            }
+
+                            .phone__number {
+                                margin: 20px 0;
+                                h3 {
+                                    font-size: 24px;
+                                    line-height: 23px;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                                line-height: 15px;
+                            }
+                        }
+
+                    }
+
+                    .appointment-form__section {
+                        margin-top: 20px;
+
+                        .appointment-form__input {
+                            display: block;
+                            padding: 17px 21px;
+                            font-size: 13px;
+                            margin-top: 20px;
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+                .appointment__image {
+                    display: none;
+                }
+            }
+        }
+
+        .skills__section {
+            text-align: center;
+            margin-top: 100px;
+    
+            .title {
+                h2 {
+                    font-size: 30px;
+                    line-height: 36px;
+                }
+            }
+    
+            .skills__items {
+                width: 90%;
+                margin: 0 auto;
+                .skill__item {
+                    width: 100%;
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .recomendation__furneture {
+            .title {
+                h3 {
+                    font-size: 30px;
+                    line-height: 32px;
+                }
+            }
+        }
+    
+        
     }
 }

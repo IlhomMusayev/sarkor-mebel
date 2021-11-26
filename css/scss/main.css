@@ -1664,6 +1664,11 @@
           box-sizing: border-box;
 }
 
+.product__content .row {
+  --bs-gutter-x: 0.5em;
+  --bs-gutter-y: 0;
+}
+
 .product__content #content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1844,6 +1849,12 @@
   border: none;
 }
 
+.product__content .product__about .product__content__about .product__add__cart__section .add__cart__button :hover {
+  background: #8b6238;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .product__content .product__about .product__specifications {
   margin-top: 40px;
 }
@@ -1970,6 +1981,11 @@
   fill: #fff;
 }
 
+.product__content .fabrics__for__furniture .furniture__galery .splide .splide__arrows .splide__arrow--prev:hover {
+  -webkit-box-shadow: 0px 0px 10px #ac8d6d;
+          box-shadow: 0px 0px 10px #ac8d6d;
+}
+
 .product__content .fabrics__for__furniture .furniture__galery .splide .splide__arrows .splide__arrow--next {
   right: -4%;
   background-color: #A67C52;
@@ -1980,6 +1996,11 @@
 
 .product__content .fabrics__for__furniture .furniture__galery .splide .splide__arrows .splide__arrow--next svg {
   fill: #fff;
+}
+
+.product__content .fabrics__for__furniture .furniture__galery .splide .splide__arrows .splide__arrow--next:hover {
+  -webkit-box-shadow: 0px 0px 10px #ac8d6d;
+          box-shadow: 0px 0px 10px #ac8d6d;
 }
 
 .product__content .fabrics__for__furniture2 {
@@ -2029,6 +2050,11 @@
   fill: #fff;
 }
 
+.product__content .fabrics__for__furniture2 .furniture__galery .splide2 .splide__arrows .splide__arrow--prev:hover {
+  -webkit-box-shadow: 0px 0px 10px #ac8d6d;
+          box-shadow: 0px 0px 10px #ac8d6d;
+}
+
 .product__content .fabrics__for__furniture2 .furniture__galery .splide2 .splide__arrows .splide__arrow--next {
   right: -4%;
   background-color: #A67C52;
@@ -2039,6 +2065,11 @@
 
 .product__content .fabrics__for__furniture2 .furniture__galery .splide2 .splide__arrows .splide__arrow--next svg {
   fill: #fff;
+}
+
+.product__content .fabrics__for__furniture2 .furniture__galery .splide2 .splide__arrows .splide__arrow--next:hover {
+  -webkit-box-shadow: 0px 0px 10px #ac8d6d;
+          box-shadow: 0px 0px 10px #ac8d6d;
 }
 
 .product__content .appointment__section {
@@ -2441,6 +2472,321 @@
 
 .become__a__part .btn-apponitment:hover {
   background: #8b6238;
+}
+
+@media (max-width: 768px) {
+  .product__content {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .product__content .product__about {
+    margin-right: 0px;
+  }
+  .product__content .product__about .column #featured {
+    width: 100%;
+    height: 300px;
+  }
+  .product__content .product__about .product__description {
+    width: 100%;
+  }
+  .product__content .product__about .product__description .title {
+    margin-bottom: 20px;
+  }
+  .product__content .product__about .product__description .title h3 {
+    font-size: 20px;
+  }
+  .product__content .product__about .product__description p {
+    font-size: 16px;
+  }
+  .product__content .product__about .product__content__about {
+    padding-left: 3px;
+  }
+  .product__content .product__about .product__content__about .product__category__name h3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .product__content .product__about .product__content__about .product__name h2 {
+    font-size: 28px;
+  }
+  .product__content .product__about .product__content__about .product__price h3 {
+    font-size: 22px;
+  }
+  .product__content .product__about .product__content__about .product__add__cart__section {
+    margin-top: 30px;
+  }
+  .product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .title {
+    font-size: 12px;
+    line-height: 0px;
+  }
+  .product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .cart__count {
+    margin-left: 0;
+    width: 116px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .cart__count button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 10px 10px;
+  }
+  .product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .cart__count input {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 10px 5px;
+    width: 45px;
+    font-size: 16px;
+  }
+  .product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .cart__count .plus img {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .product__content .product__about .product__content__about .product__add__cart__section .add__cart__button {
+    width: 100%;
+    margin-right: 10px;
+  }
+  .product__content .product__about .product__content__about .product__add__cart__section .add__cart__button button {
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 16px;
+  }
+  .product__content .product__about .product__specifications {
+    margin-top: 40px;
+  }
+  .product__content .product__about .product__specifications .title h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .product__content .product__about .product__specifications .product__specifications__item h4 {
+    font-size: 16px;
+  }
+  .product__content .product__about .product__specifications .product__specifications__item h4 span {
+    margin-left: 5px;
+  }
+  .product__content .product__about .product__specifications .product__payments {
+    margin-top: 30px;
+  }
+  .product__content .product__about .product__specifications .product__payments .list__items {
+    padding-left: 20px;
+  }
+  .product__content .product__about .product__specifications .product__payments .list__items .title {
+    list-style: none;
+  }
+  .product__content .product__about .product__specifications .product__payments .list__items .title h3 {
+    font-size: 20px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+  .product__content .product__about .product__specifications .product__payments .list__items .list__item {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .product__content .product__about .product__specifications .product__shiping {
+    margin-top: 30px;
+  }
+  .product__content .product__about .product__specifications .product__shiping .list__items {
+    padding-left: 20px;
+  }
+  .product__content .product__about .product__specifications .product__shiping .list__items .title {
+    list-style: none;
+  }
+  .product__content .product__about .product__specifications .product__shiping .list__items .title h3 {
+    font-size: 22px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+  .product__content .product__about .product__specifications .product__shiping .list__items .list__item {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .product__content .fabrics__for__furniture {
+    margin-top: 100px;
+    background-color: #09432B;
+    background-image: url("../../images/icons/Pattern.svg");
+    z-index: -1;
+    padding: 100px 0;
+    padding-bottom: 150px;
+  }
+  .product__content .fabrics__for__furniture .row {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .product__content .fabrics__for__furniture .row .furniture__contents .title h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 54px;
+    text-transform: uppercase;
+  }
+  .product__content .fabrics__for__furniture .row .furniture__contents .content {
+    margin-top: 40px;
+  }
+  .product__content .fabrics__for__furniture .row .furniture__contents .content p {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .product__content .fabrics__for__furniture .row .furniture__galery {
+    position: relative;
+  }
+  .product__content .fabrics__for__furniture .row .furniture__galery img {
+    width: 100%;
+  }
+  .product__content .fabrics__for__furniture .row .furniture__galery .splide {
+    width: 100%;
+  }
+  .product__content .fabrics__for__furniture .row .furniture__galery .splide .splide__arrows .splide__arrow--prev {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    background-color: #A67C52;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+  }
+  .product__content .fabrics__for__furniture .row .furniture__galery .splide .splide__arrows .splide__arrow--prev svg {
+    fill: #fff;
+  }
+  .product__content .fabrics__for__furniture .row .furniture__galery .splide .splide__arrows .splide__arrow--next {
+    position: absolute;
+    top: 110%;
+    right: 35%;
+    background-color: #A67C52;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+  }
+  .product__content .fabrics__for__furniture .row .furniture__galery .splide .splide__arrows .splide__arrow--next svg {
+    fill: #fff;
+  }
+  .product__content .fabrics__for__furniture2 {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .product__content .fabrics__for__furniture2 .row {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .product__content .fabrics__for__furniture2 .row .furniture__contents {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .product__content .fabrics__for__furniture2 .row .furniture__contents .title h3 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: none;
+    text-transform: uppercase;
+  }
+  .product__content .fabrics__for__furniture2 .row .furniture__contents .content p {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .product__content .fabrics__for__furniture2 .row .furniture__galery {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .product__content .fabrics__for__furniture2 .row .furniture__galery img {
+    width: 100%;
+  }
+  .product__content .fabrics__for__furniture2 .row .furniture__galery .splide2 {
+    position: relative;
+    width: 100%;
+  }
+  .product__content .fabrics__for__furniture2 .row .furniture__galery .splide2 .splide__arrows .splide__arrow--prev {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    background-color: #A67C52;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+  }
+  .product__content .fabrics__for__furniture2 .row .furniture__galery .splide2 .splide__arrows .splide__arrow--prev svg {
+    fill: #fff;
+  }
+  .product__content .fabrics__for__furniture2 .row .furniture__galery .splide2 .splide__arrows .splide__arrow--next {
+    position: absolute;
+    top: 110%;
+    right: 35%;
+    background-color: #A67C52;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+  }
+  .product__content .fabrics__for__furniture2 .row .furniture__galery .splide2 .splide__arrows .splide__arrow--next svg {
+    fill: #fff;
+  }
+  .product__content .appointment__section {
+    padding: 80px 0;
+  }
+  .product__content .appointment__section .container .appointment__content .title h2 {
+    font-size: 26px;
+  }
+  .product__content .appointment__section .container .appointment__content .contnent p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .product__content .appointment__section .container .appointment__content .call-me__section .title h4 {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .product__content .appointment__section .container .appointment__content .call-me__section .title .phone__number {
+    margin: 20px 0;
+  }
+  .product__content .appointment__section .container .appointment__content .call-me__section .title .phone__number h3 {
+    font-size: 24px;
+    line-height: 23px;
+  }
+  .product__content .appointment__section .container .appointment__content .call-me__section .title p {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .product__content .appointment__section .container .appointment__content .appointment-form__section {
+    margin-top: 20px;
+  }
+  .product__content .appointment__section .container .appointment__content .appointment-form__section .appointment-form__input {
+    display: block;
+    padding: 17px 21px;
+    font-size: 13px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .product__content .appointment__section .container .appointment__image {
+    display: none;
+  }
+  .product__content .skills__section {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .product__content .skills__section .title h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .product__content .skills__section .skills__items {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .product__content .skills__section .skills__items .skill__item {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .product__content .recomendation__furneture .title h3 {
+    font-size: 30px;
+    line-height: 32px;
+  }
 }
 
 .clients__section {
