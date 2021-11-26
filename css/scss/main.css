@@ -2823,6 +2823,17 @@
   padding: 40px;
 }
 
+@media (max-width: 768px) {
+  .clients__section .title h3 {
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .clients__section .clients__items {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .upholstery__section {
   color: #FFFFFF;
 }
