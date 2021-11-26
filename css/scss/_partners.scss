@@ -34,3 +34,48 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .partner__section {
+        color: $white-color;
+    
+        .pratner__items {
+    
+            .partner__item {
+                margin-bottom: 100px;
+                .partner__item__content {
+                    order: 2;
+                    margin-top: 30px;
+                    .title {
+                        h3 {
+                            font-size: 30px;
+                            line-height: 29px;
+                        }
+                    }
+    
+                    .content {
+                        margin-top: 30px;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+                .partner__item__image{
+                    order: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    max-width: 94%;
+                    width: 100%;
+                    height: 400px;
+                    background-color: $white-color;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
