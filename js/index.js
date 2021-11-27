@@ -25,6 +25,6 @@ function openMenu () {
 function openMiniMenu () {
     document.getElementById('hidden-nav').style.cssText = 'display: block'
     document.querySelector('.mini_menu_btn').style.cssText = 'display: none'
-    document.querySelector('.header__right').style.cssText = 'display: block'
+    document.querySelector('.header__right').style.cssText = 'display: none'
 
 }

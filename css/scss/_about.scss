@@ -134,7 +134,7 @@
           font-size: 18px;
           font-weight: bold;
           color: $white-color;
-          width: 90%;
+          width: 100%;
         }
 
         p {
@@ -202,5 +202,10 @@
         }
       }
     }
+  }
+}
+@media (max-width: 372px) {
+  .about__header__year span{
+    left: 50%;
   }
 }

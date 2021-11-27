@@ -206,7 +206,7 @@
     }
 
     .appointment__section {
-        margin-top: 200px;
+        margin-top: 100px;
         // padding: 100px 0;
 
         .container {
@@ -349,6 +349,212 @@
                             color: $black-color;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__section{
+        .title {
+            margin-bottom: 0;
+            h3 {
+                font-size: 30px;
+                line-height: 29px;
+
+            }
+        }
+        .contact__main__section {
+
+            .contact__faq__section {
+                margin: 50px 0;
+                .accordion {
+                    .accordion-header {
+                        .btn_accordion {
+                            padding: 20px 0;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 21px;
+    
+                            .plusminus {
+                                position: relative;
+                                width: 20px;
+                                height: 20px;
+                                cursor: pointer;
+    
+                                &.active {
+                                    &:before {
+                                        transform: translatey(-50%) rotate(-90deg);
+                                        opacity: 0;
+                                    }
+    
+                                    &:after {
+                                        transform: translatey(-50%) rotate(0);
+                                    }
+                                }
+    
+                                &:before,
+                                &:after {
+                                    content: "";
+                                    display: block;
+                                    background-color: $white-color;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    transition: .35s;
+                                    width: 100%;
+                                    height: 3px;
+                                }
+    
+                                &:before {
+                                    transform: translatey(-50%);
+                                }
+    
+                                &:after {
+                                    transform: translatey(-50%) rotate(90deg);
+                                }
+    
+                            }
+                        }
+    
+                        span {}
+    
+                    }
+    
+                    .accordion-body {
+                        background-color: $dark-color;
+                        padding: 20px 0;
+    
+                        .region__branches {
+                            .brachne__item {
+    
+                                .branche__name {
+                                    h4 {
+                                        font-style: normal;
+                                        font-weight: 300;
+                                        font-size: 16px;
+                                        line-height: 15px;
+    
+                                    }
+                                }
+    
+                                .branche__address {
+                                    .working__tim {
+                                        font-style: normal;
+                                        font-weight: 300;
+                                        font-size: 16px;
+                                        line-height: 15px;
+                                    }
+    
+                                    .address {
+                                        font-style: normal;
+                                        font-weight: 300;
+                                        font-size: 16px;
+                                        line-height: 20px;
+    
+                                    }
+    
+                                    .phone__number {
+                                        font-style: normal;
+                                        font-weight: 300;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                    }
+                                }
+    
+                            }
+    
+                            .active {
+    
+                                h4,
+                                span,
+                                h5,
+                                p {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .contact__data__section {
+                .maps {
+                    iframe{
+                        width: 100%;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                }
+                
+                .branches__sarkon {
+                    .address__data {
+                        .working__time {
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
+
+        .appointment__section {
+            padding: 0px 0;
+            .container {
+                .appointment__content {
+                    .title {
+                        h2 {
+                            font-size: 26px;
+    
+                        }
+                    }
+    
+                    .contnent {
+                        p {
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                    }
+    
+                    .call-me__section {
+                        .title {
+                            h4 {
+                                font-size: 16px;
+                                line-height: 15px;
+                            }
+    
+                            .phone__number {
+                                margin: 20px 0;
+                                h3 {
+                                    font-size: 24px;
+                                    line-height: 23px;
+                                }
+                            }
+    
+                            p {
+                                font-size: 16px;
+                                line-height: 15px;
+                            }
+                        }
+    
+                    }
+    
+                    .appointment-form__section {
+                        margin-top: 20px;
+    
+                        .appointment-form__input {
+                            display: block;
+                            padding: 17px 21px;
+                            font-size: 13px;
+                            margin-top: 20px;
+                            width: 100%;
+                        }
+                    }
+    
+                }
+    
+                .appointment__image {
+                    display: none;
                 }
             }
         }

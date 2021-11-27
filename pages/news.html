@@ -31,7 +31,7 @@
     <header class="s__header">
 
         <div class="header__logo">
-            <a href="index.html" class="header__logo__item">
+            <a href="../index.html" class="header__logo__item">
                 <img src="../images/logotip.png" alt="Sarkor">
             </a>
         </div>
@@ -53,8 +53,14 @@
             </ul>
         </nav>
 
+        <li class="mini_menu_btn">
+            <a type="button" onclick="openMiniMenu()">
+                <img src="../images/icons/menu.svg" alt="menu">
+            </a>
+        </li>
+
         <div class="hidden__nav" id="hidden-nav">
-            <button class="hidden__nav__button  shadow-none" id="nav-close" onclick="closeMenu()">
+            <button class="hidden__nav__button btn shadow-none" id="nav-close" onclick="closeMenu()">
                 <img src="../images/icons/Close.svg" alt="X">
             </button>
             <div class="hidden__nav__wrapper">
@@ -65,57 +71,56 @@
                         </a>
                     </li>
                     <li class="hidden__nav__list__item">
-                        <a href="#">
+                        <a href="/pages/categories.html">
                             <h4>Категории</h4>
                         </a>
                     </li>
                     <li class="hidden__nav__list__item">
-                        <a href="#">
+                        <a href="/pages/about.html">
                             <h4>Компания</h4>
                         </a>
                         <ul class="hidden__nav__list__item__in">
                             <li>
-                                <a href="#">
+                                <a href="/pages/about.html">
                                     О фабрике
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="pages/production.html">
                                     Производство
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/pages/clients.html">
                                     Наши клиенты
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="pages/partners.html">
                                     Наши партнеры
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/pages/news.html">
                                     Новости
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="hidden__nav__list__item">
-                        <a href="#">
+                        <a href="/pages/services.html">
                             <h4>Сервис</h4>
                         </a>
                     </li>
                     <li class="hidden__nav__list__item">
-                        <a href="#">
+                        <a href="/pages/catalogue.html">
                             <h4>Каталог</h4>
                         </a>
                     </li>
                 </ul>
                 <div class="hidden__nav__footer mb-4">
                     <div class="hidden__nav__help mb-4">
-                        <a href="#" class="text-decoration-none fw-bolder text-light h6 text-uppercase">Нужна
-                            помощь?</a>
+                        <a href="#" class="text-decoration-none fw-bolder text-light h6 text-uppercase">Нужна помощь?</a>
                     </div>
                     <div class="hidden__nav__footer__info d-flex flex-column">
                         <a href="#" class="text-decoration-none text-light">Sarkormebel@gmail.com</a>

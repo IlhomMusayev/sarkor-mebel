@@ -138,6 +138,10 @@
   .header__logo a {
     display: block;
   }
+  .header__logo a img {
+    width: 100%;
+    height: 36px;
+  }
   .header__nav {
     position: absolute;
     left: 50%;
@@ -170,92 +174,15 @@
   }
   .header__right {
     display: none;
-    position: fixed;
-    background-color: none;
-    background: none;
-    -webkit-backdrop-filter: none;
-            backdrop-filter: none;
-    width: 0%;
-    height: 0%;
-    border-left: none;
-    z-index: 9999;
-  }
-  .header__right__wrapper {
-    height: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 36px 0;
-    z-index: 100;
-  }
-  .header__right__icons {
-    padding-left: 0;
-    margin-bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    bottom: 18%;
-    margin-right: 700px;
-  }
-  .header__right__icons__item {
-    list-style: none;
-    position: relative;
-    margin-right: 15px;
-  }
-  .header__right__icons__item__badge {
-    background-color: #A67C52;
-    position: absolute;
-    display: block;
-    bottom: -5px;
-    left: 50%;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-  }
-  .header__right__icons__item__badge p {
-    text-align: center;
-    font-size: 12px;
-    color: #FFFFFF;
-  }
-  .header__right__icons__item:first-child {
-    margin: 0;
-    display: none;
-  }
-  .header__right__phone {
-    position: absolute;
-    bottom: 40%;
-    margin-right: 100px;
-  }
-  .header__right__socials {
-    padding-left: 0;
-    margin-bottom: 0;
-    position: absolute;
-    bottom: 10%;
-    margin-right: 100px;
-  }
-  .header__right__socials img {
-    width: 40px;
-  }
-  .header__right__socials__item {
-    list-style: none;
-    margin: 20px 0;
   }
   .hidden__nav {
     width: 100%;
   }
   .header__logo {
     left: 20px;
+  }
+  .header__right__socials__item {
+    margin: 0;
   }
 }
 
@@ -611,6 +538,10 @@
   top: 30%;
 }
 
+.hidden__header__right__wrapper {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .mini_menu_btn {
     display: block;
@@ -658,6 +589,48 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     z-index: 9998;
+  }
+  .hidden__nav__wrapper .hidden__header__right__wrapper {
+    display: block;
+  }
+  .hidden__nav__wrapper .hidden__header__right__wrapper .hidden__header__right__icons {
+    list-style: none;
+  }
+  .hidden__nav__wrapper .hidden__header__right__wrapper .hidden__header__right__icons .hidden__header__right__icons__item {
+    list-style: none;
+    position: relative;
+    margin-right: 10px;
+  }
+  .hidden__nav__wrapper .hidden__header__right__wrapper .hidden__header__right__icons .hidden__header__right__icons__item .hidden__header__right__icons__item__badge {
+    background-color: #A67C52;
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  .hidden__nav__wrapper .hidden__header__right__wrapper .hidden__header__right__icons .hidden__header__right__icons__item .hidden__header__right__icons__item__badge p {
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+  }
+  .hidden__nav__wrapper .hidden__header__right__wrapper .hidden__header__right__phone {
+    list-style: none;
+    position: absolute;
+    top: 60%;
+    right: -85%;
+  }
+  .hidden__nav__wrapper .hidden__header__right__wrapper .hidden__header__right__socials {
+    position: absolute;
+    top: 70%;
+    right: -85%;
+    margin: 0;
+  }
+  .hidden__nav__wrapper .hidden__header__right__wrapper .hidden__header__right__socials .hidden__header__right__socials__item {
+    list-style: none;
+    margin: 20px 0;
   }
   .hidden__nav__list {
     padding-left: 0;
@@ -943,6 +916,7 @@
     margin-top: 10px;
     padding-top: 5px;
     font-size: 14px;
+    width: 90%;
   }
   .recommend__card__title:hover {
     color: #A67C52;
@@ -1217,7 +1191,7 @@
     font-size: 18px;
     font-weight: bold;
     color: #FFFFFF;
-    width: 90%;
+    width: 100%;
   }
   .about__header__content p {
     position: static;
@@ -1274,6 +1248,12 @@
   }
   .about__content__icon img {
     width: 50px;
+  }
+}
+
+@media (max-width: 372px) {
+  .about__header__year span {
+    left: 50%;
   }
 }
 
@@ -2787,6 +2767,159 @@
     font-size: 30px;
     line-height: 32px;
   }
+  .about__me__main .container .about__me__content {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about__me__main .container .about__me__content img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about__me__main .container .about__me__content .title {
+    position: relative;
+    left: 0;
+    margin-bottom: 20px;
+  }
+  .about__me__main .container .about__me__content .title h2 {
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .about__me__main .container .about__me__content .about__content .sub__title {
+    margin: 40px 0;
+  }
+  .about__me__main .container .about__me__content .about__content .sub__title h3 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .about__me__main .container .about__me__content .about__content .content {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0px;
+  }
+  .about__me__main .container .about__farm {
+    margin: 50px 0;
+  }
+  .about__me__main .container .about__farm .about__me__image img {
+    width: 370px;
+    height: 370px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about__me__main .container .about__farm .about__fram__content {
+    margin: 50px 0;
+  }
+  .about__me__main .container .about__farm .about__fram__content .sub__title h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 44px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .about__me__main .container .about__farm .about__fram__content p {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 10px;
+  }
+  .about__me__main .s__about {
+    padding: 100px 0;
+    background-color: #09432B;
+    background-image: url("../../images/icons/Pattern.svg");
+    z-index: -1;
+  }
+  .awards__section {
+    margin-top: 100px;
+  }
+  .awards__section .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .awards__section .awards__title h3 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .awards__section .awards__content {
+    margin-top: 20px;
+  }
+  .awards__section .awards__content p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .awards__section .awards__carusel {
+    margin-top: 150px;
+  }
+  .awards__section .awards__carusel .splide {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .awards__section .awards__carusel .splide .splide__arrows .splide__arrow {
+    background: none;
+    opacity: 1;
+  }
+  .awards__section .awards__carusel .splide .splide__arrows .splide__arrow--prev {
+    position: absolute;
+    top: -10%;
+    left: 0%;
+  }
+  .awards__section .awards__carusel .splide .splide__arrows .splide__arrow--prev svg {
+    display: none;
+  }
+  .awards__section .awards__carusel .splide .splide__arrows .splide__arrow--next {
+    position: absolute;
+    top: -10%;
+    left: 20%;
+  }
+  .awards__section .awards__carusel .splide .splide__arrows .splide__arrow--next svg {
+    display: none;
+  }
+  .awards__section .awards__carusel .splide .splide__track .splide__list .splide__slide img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .awards__section .awards__carusel .splide .splide__track .splide__list .splide__slide.is-active img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .become__a__part {
+    margin: 100px 0 0 0;
+  }
+  .become__a__part .title h3 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .become__a__part .content {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .become__a__part .btn-apponitment {
+    padding: 20px 40px;
+    background: #A67C52;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+  }
+  .become__a__part .btn-apponitment:hover {
+    background: #8b6238;
+  }
 }
 
 .clients__section {
@@ -3240,7 +3373,7 @@
     height: 30px;
   }
   .row {
-    --bs-gutter-x: 1none;
+    --bs-gutter-x: none;
     --bs-gutter-y: 0;
   }
 }
@@ -3864,7 +3997,7 @@
 }
 
 .contact__section .appointment__section {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .contact__section .appointment__section .container {
@@ -4011,6 +4144,141 @@
   font-size: 22px;
   line-height: 32px;
   color: #000000;
+}
+
+@media (max-width: 768px) {
+  .contact__section .title {
+    margin-bottom: 0;
+  }
+  .contact__section .title h3 {
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .contact__section .contact__main__section .contact__faq__section {
+    margin: 50px 0;
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion {
+    padding: 20px 0;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 21px;
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus.active:before {
+    -webkit-transform: translatey(-50%) rotate(-90deg);
+            transform: translatey(-50%) rotate(-90deg);
+    opacity: 0;
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus.active:after {
+    -webkit-transform: translatey(-50%) rotate(0);
+            transform: translatey(-50%) rotate(0);
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus:before, .contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus:after {
+    content: "";
+    display: block;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transition: .35s;
+    transition: .35s;
+    width: 100%;
+    height: 3px;
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus:before {
+    -webkit-transform: translatey(-50%);
+            transform: translatey(-50%);
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-header .btn_accordion .plusminus:after {
+    -webkit-transform: translatey(-50%) rotate(90deg);
+            transform: translatey(-50%) rotate(90deg);
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-body {
+    background-color: #191919;
+    padding: 20px 0;
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .brachne__item .branche__name h4 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .brachne__item .branche__address .working__tim {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .brachne__item .branche__address .address {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .brachne__item .branche__address .phone__number {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .active h4,
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .active span,
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .active h5,
+  .contact__section .contact__main__section .contact__faq__section .accordion .accordion-body .region__branches .active p {
+    font-weight: bold;
+  }
+  .contact__section .contact__main__section .contact__data__section .maps iframe {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact__section .contact__main__section .contact__data__section .branches__sarkon .address__data .working__time {
+    text-align: start;
+  }
+  .contact__section .appointment__section {
+    padding: 0px 0;
+  }
+  .contact__section .appointment__section .container .appointment__content .title h2 {
+    font-size: 26px;
+  }
+  .contact__section .appointment__section .container .appointment__content .contnent p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .contact__section .appointment__section .container .appointment__content .call-me__section .title h4 {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .contact__section .appointment__section .container .appointment__content .call-me__section .title .phone__number {
+    margin: 20px 0;
+  }
+  .contact__section .appointment__section .container .appointment__content .call-me__section .title .phone__number h3 {
+    font-size: 24px;
+    line-height: 23px;
+  }
+  .contact__section .appointment__section .container .appointment__content .call-me__section .title p {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .contact__section .appointment__section .container .appointment__content .appointment-form__section {
+    margin-top: 20px;
+  }
+  .contact__section .appointment__section .container .appointment__content .appointment-form__section .appointment-form__input {
+    display: block;
+    padding: 17px 21px;
+    font-size: 13px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .contact__section .appointment__section .container .appointment__image {
+    display: none;
+  }
 }
 
 body {
