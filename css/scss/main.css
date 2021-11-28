@@ -1686,13 +1686,14 @@
   .basket__items__wrapper {
     position: relative;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .basket__items__title {
     margin-bottom: 10px;
   }
   .basket__items__title p {
-    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 15px;
   }
   .basket__items__title .basket__item:nth-child(2) {
     position: absolute;
@@ -1705,8 +1706,6 @@
   }
   .basket__products__list {
     position: relative;
-    padding: 0;
-    margin: 0;
   }
   .basket__product {
     padding-bottom: 20px;
@@ -1736,6 +1735,8 @@
   .basket__product__content p {
     position: relative;
     color: #FFFFFF;
+    font-size: 16px;
+    line-height: 15px;
   }
   .basket__product__title {
     margin: 0;
@@ -1745,7 +1746,7 @@
     color: #FFFFFF;
     text-decoration: none;
     font-size: 20px;
-    font-weight: bold;
+    line-height: 25px;
   }
   .basket__product__count {
     display: -webkit-box;
@@ -1754,9 +1755,39 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .basket__product__count .cart__count {
+    border-radius: 5px;
+    border: 2px solid #363636;
+    margin-left: 0;
+  }
+  .basket__product__count .cart__count button {
+    background: #121212 url("../../images/icons/arrow-lefr.svg") no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    border: none;
+    color: #FFFFFF;
+    width: 30px;
+    height: 45px;
+  }
+  .basket__product__count .cart__count input {
+    border: none;
+    color: #FFFFFF;
+    background: #121212;
+    padding: 12px 5px;
+    width: 45px;
+    text-align: center;
+  }
+  .basket__product__count .cart__count .plus {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .basket__product__count .cart__count .plus img {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   .basket__product__price {
     text-align: right;
@@ -2034,14 +2065,17 @@
 .product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .cart__count {
   border-radius: 5px;
   border: 2px solid #363636;
-  margin-left: 15px;
+  margin-left: 0;
 }
 
 .product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .cart__count button {
-  background: #121212;
+  background: #121212 url("../../images/icons/arrow-lefr.svg") no-repeat;
+  background-position-y: 50%;
+  background-position-x: 50%;
   border: none;
   color: #FFFFFF;
-  padding: 12px 10px;
+  width: 29px;
+  height: 45px;
 }
 
 .product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .cart__count input {
@@ -2051,6 +2085,11 @@
   padding: 12px 5px;
   width: 45px;
   text-align: center;
+}
+
+.product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .cart__count .plus {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .cart__count .plus img {

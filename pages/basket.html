@@ -285,7 +285,7 @@
                     <a href="/">Корзина</a>
                 </li>
             </ul>
-            <header class="categories__header" data-aos="fade-up">
+            <header class="categories__header mb-5" data-aos="fade-up">
                 <h3 class="categories__header__text text-capitalize">Моя корзина</h3>
             </header>
             <main class="basket__content">
@@ -320,12 +320,18 @@
                                                 </div>
                                             </div>
                                             <div class="basket__product__count col-6 col-lg-2">
-                                                <div class="d-flex align-items-center justify-content-lg-center">
-                                                    <input type="number" value="3" min="0" class="basket__count__input">
+                                                <div class="cart__count d-lg-flex align-items-center">
+                                                    <button class="minus">
+                                                        <img src="" alt="">
+                                                    </button>
+                                                    <input type="text" value="1" class="count">
+                                                    <button class="plus">
+                                                        <img src="" alt="">
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="basket__product__price col-6 col-lg-3">
-                                                <p class="p-0 m-0">650 900 sum</p>
+                                                <p class="p-0 m-0 price" data-price = "650900" >650900</p>
                                                 <span class="basket__product__price__discount">650 900 sum</span>
                                             </div>
                                             <div class="basket__product__cancel col-lg-1">
@@ -361,12 +367,18 @@
                                                 </div>
                                             </div>
                                             <div class="basket__product__count col-6 col-lg-2">
-                                                <div class="d-flex align-items-center justify-content-lg-center">
-                                                    <input type="number" value="3" min="0" class="basket__count__input">
+                                                <div class="cart__count d-lg-flex align-items-center">
+                                                    <button class="minus">
+                                                        <img src="" alt="">
+                                                    </button>
+                                                    <input type="text" value="1" class="count">
+                                                    <button class="plus">
+                                                        <img src="" alt="">
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="basket__product__price col-6 col-lg-3">
-                                                <p class="p-0 m-0">650 900 sum</p>
+                                                <p class="p-0 m-0 price" data-price = "650900">650900</p>
                                                 <span class="basket__product__price__discount">650 900 sum</span>
                                             </div>
                                             <div class="basket__product__cancel col-lg-1">
@@ -384,8 +396,8 @@
                                     В корзине
                                 </h4>
                                 <div class="basket__info__numbers">
-                                    <p class="m-0 p-0">3 товар(ов)</p>
-                                    <p class="m-0 p-0 basket__info__numbers__price">1 950 700 сум</p>
+                                    <p class="m-0 p-0 total-product-count">3</p>
+                                    <p class="m-0 p-0 basket__info__numbers__price total-price">1 950 700 сум</p>
                                 </div>
                                 <div class="recommend__button__wrapper aos-init aos-animate" data-aos="fade-up">
                                     <a type="button" class="recommend__button">Оформить заказ</a>
@@ -512,6 +524,8 @@
 <script>AOS.init()</script>
 <script src="../js/bootstrap.js"></script>
 <script src="../js/index.js"></script>
+<script src="../js/basket.js"></script>
+
 </body>
 
 </html>

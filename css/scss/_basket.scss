@@ -162,17 +162,17 @@
     padding-top: 125px;
   }
   &__items {
-    .basket__item__list{
-    }
+
     &__wrapper {
       position: relative;
       margin-right: 20px;
-      margin-top: 10px;
+      margin-top: 20px;
     }
     &__title {
       margin-bottom: 10px;
       p {
-        color: $white-color;
+        font-size: 16px;
+        line-height: 15px;
       }
 
       .basket__item:nth-child(2){
@@ -189,8 +189,6 @@
   &__products {
     &__list {
       position: relative;
-      padding: 0;
-      margin: 0;
     }
   }
   &__product {
@@ -212,9 +210,11 @@
     &__content {
       padding-right: 0px;
       margin-bottom: 50px;
-      p {      position: relative;
-
+      p {      
+        position: relative;
         color: $white-color;
+        font-size: 16px;
+        line-height: 15px;
       }
     }
     &__title {
@@ -224,13 +224,45 @@
         color: $white-color;
         text-decoration: none;
         font-size: 20px;
-        font-weight: bold;
+        line-height: 25px;   
       }
     }
     &__count {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: start;
+      .cart__count {
+        border-radius: 5px;
+        border: 2px solid #363636;
+        margin-left: 0;
+
+        button {
+            background: #121212 url('../../images/icons/arrow-lefr.svg') no-repeat;
+            background-position-y: 50%;
+            background-position-x: 50%;
+            border: none;
+            color: $white-color;
+            width: 30px;
+            height: 45px;
+        }
+
+
+        input {
+            border: none;
+            color: $white-color;
+            background: #121212;
+            padding: 12px 5px;
+            width: 45px;
+            text-align: center;
+        }
+
+        .plus {
+          transform: rotate(180deg);
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    }
     }
     &__price {
       text-align: right;
