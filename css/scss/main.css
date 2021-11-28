@@ -1472,7 +1472,6 @@
 }
 
 .s__basket {
-  position: relative;
   min-height: 100vh;
 }
 
@@ -1675,6 +1674,190 @@
 .basket__info__footer button p {
   color: #FFFFFF;
   font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .s__basket {
+    min-height: 100vh;
+  }
+  .basket__wrapper {
+    padding-top: 125px;
+  }
+  .basket__items__wrapper {
+    position: relative;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .basket__items__title {
+    margin-bottom: 10px;
+  }
+  .basket__items__title p {
+    color: #FFFFFF;
+  }
+  .basket__items__title .basket__item:nth-child(2) {
+    position: absolute;
+    top: 60%;
+  }
+  .basket__items__title .basket__item:nth-child(3) {
+    position: absolute;
+    top: 60%;
+    right: 0%;
+  }
+  .basket__products__list {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .basket__product {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #363636;
+    margin-top: 15px;
+  }
+  .basket__product__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .basket__product__image {
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+  .basket__product__content {
+    padding-right: 0px;
+    margin-bottom: 50px;
+  }
+  .basket__product__content p {
+    position: relative;
+    color: #FFFFFF;
+  }
+  .basket__product__title {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .basket__product__title a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .basket__product__count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .basket__product__price {
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basket__product__price p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #A67C52;
+  }
+  .basket__product__price__discount {
+    color: #AFB0B0;
+    font-weight: bold;
+    text-decoration: line-through;
+  }
+  .basket__product__cancel {
+    position: absolute;
+    right: -46%;
+    top: -20%;
+  }
+  .basket__count__input {
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #363636;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 22px;
+    text-align: center;
+  }
+  .basket__count__input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .basket__info {
+    border: 1.6px solid #363636;
+    padding: 0;
+  }
+  .basket__info__wrapper {
+    padding: 30px;
+  }
+  .basket__info__wrapper .recommend__button__wrapper {
+    margin: 0;
+    text-align: center;
+  }
+  .basket__info__wrapper .recommend__button__wrapper a {
+    width: 100%;
+  }
+  .basket__info__numbers {
+    margin: 30px 0;
+  }
+  .basket__info__numbers p {
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  .basket__info__numbers__price {
+    color: #A67C52 !important;
+    font-size: 23px !important;
+    font-weight: bold !important;
+  }
+  .basket__info__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  .basket__info__footer {
+    border-top: 1.6px solid #363636;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .basket__info__footer button {
+    margin: 18px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .basket__info__footer button div {
+    margin-right: 10px;
+  }
+  .basket__info__footer button p {
+    color: #FFFFFF;
+    font-weight: bold;
+  }
 }
 
 .s__product {

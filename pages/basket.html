@@ -291,50 +291,94 @@
             <main class="basket__content">
                 <div class="basket__list__wrapper">
                     <div class="row">
-                        <div class="col-8 basket__items">
-                            <div class="basket__items__wrapper">
-                                <div class="row basket__items__title">
-                                    <div class="col-6">
-                                        <p class="m-0">Наименование</p>
+                        <div class="col-lg-8 basket__items">
+                            <div class="basket__item__list">
+                                <div class="basket__items__wrapper">
+                                    <div class="row basket__items__title">
+                                        <div class="basket__item col-6">
+                                            <p class="m-0">Наименование</p>
+                                        </div>
+                                        <div class="basket__item col-2">
+                                            <p class="m-0 text-center">Количество</p>
+                                        </div>
+                                        <div class="basket__item col-3">
+                                            <p class="m-0 text-end">Стоимость</p>
+                                        </div>
+                                        <div class="col-1"></div>
                                     </div>
-                                    <div class="col-2">
-                                        <p class="m-0 text-center">Количество</p>
-                                    </div>
-                                    <div class="col-3">
-                                        <p class="m-0 text-end">Стоимость</p>
-                                    </div>
-                                    <div class="col-1"></div>
+                                    <ul class="basket__products__list">
+                                        <li class="basket__product row">
+                                            <div class="basket__product__name col-12 col-lg-6">
+                                                <div class="basket__product__image">
+                                                    <img src="../images/basket-product.png" alt="product">
+                                                </div>
+                                                <div class="basket__product__content">
+                                                    <p class="m-0 p-0">Артикул: А-8103-GREEN</p>
+                                                    <h5 class="basket__product__title">
+                                                        <a href="/">Мягкая мебель Barocco Lux</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="basket__product__count col-6 col-lg-2">
+                                                <div class="d-flex align-items-center justify-content-lg-center">
+                                                    <input type="number" value="3" min="0" class="basket__count__input">
+                                                </div>
+                                            </div>
+                                            <div class="basket__product__price col-6 col-lg-3">
+                                                <p class="p-0 m-0">650 900 sum</p>
+                                                <span class="basket__product__price__discount">650 900 sum</span>
+                                            </div>
+                                            <div class="basket__product__cancel col-lg-1">
+                                               <button class="btn"><img src="../images/icons/cancel.svg" alt="cancel"></button>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="basket__products__list">
-                                    <li class="basket__product row">
-                                        <div class="basket__product__name col-6">
-                                            <div class="basket__product__image">
-                                                <img src="../images/basket-product.png" alt="product">
+                                <div class="basket__items__wrapper">
+                                    <div class="row basket__items__title">
+                                        <div class="basket__item col-6">
+                                            <p class="m-0">Наименование</p>
+                                        </div>
+                                        <div class="basket__item col-2">
+                                            <p class="m-0 text-center">Количество</p>
+                                        </div>
+                                        <div class="basket__item col-3">
+                                            <p class="m-0 text-end">Стоимость</p>
+                                        </div>
+                                        <div class="col-1"></div>
+                                    </div>
+                                    <ul class="basket__products__list">
+                                        <li class="basket__product row">
+                                            <div class="basket__product__name col-12 col-lg-6">
+                                                <div class="basket__product__image">
+                                                    <img src="../images/basket-product.png" alt="product">
+                                                </div>
+                                                <div class="basket__product__content">
+                                                    <p class="m-0 p-0">Артикул: А-8103-GREEN</p>
+                                                    <h5 class="basket__product__title">
+                                                        <a href="/">Мягкая мебель Barocco Lux</a>
+                                                    </h5>
+                                                </div>
                                             </div>
-                                            <div class="basket__product__content">
-                                                <p class="m-0 p-0">Артикул: А-8103-GREEN</p>
-                                                <h5 class="basket__product__title">
-                                                    <a href="/">Мягкая мебель Barocco Lux</a>
-                                                </h5>
+                                            <div class="basket__product__count col-6 col-lg-2">
+                                                <div class="d-flex align-items-center justify-content-lg-center">
+                                                    <input type="number" value="3" min="0" class="basket__count__input">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="basket__product__count col-2">
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <input type="number" value="3" min="0" class="basket__count__input">
+                                            <div class="basket__product__price col-6 col-lg-3">
+                                                <p class="p-0 m-0">650 900 sum</p>
+                                                <span class="basket__product__price__discount">650 900 sum</span>
                                             </div>
-                                        </div>
-                                        <div class="basket__product__price col-3">
-                                            <p class="p-0 m-0">650 900 sum</p>
-                                            <span class="basket__product__price__discount">650 900 sum</span>
-                                        </div>
-                                        <div class="basket__product__cancel col-1">
-                                           <button class="btn"><img src="../images/icons/cancel.svg" alt="cancel"></button>
-                                        </div>
-                                    </li>
-                                </ul>
+                                            <div class="basket__product__cancel col-lg-1">
+                                               <button class="btn"><img src="../images/icons/cancel.svg" alt="cancel"></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+
                         </div>
-                        <div class="col-4 basket__info">
+                        <div class="col-lg-4 basket__info">
                             <main class="basket__info__wrapper">
                                 <h4 class="basket__info__title">
                                     В корзине
