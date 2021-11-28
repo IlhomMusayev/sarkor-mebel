@@ -10,6 +10,8 @@
   background-color: rgba(255, 255, 255, .1);
   backdrop-filter: blur(10px);
   z-index: 1000;
+  animation-name: mini__menu__run;
+  animation-duration: 0.5s;
 
   &__button:focus {
     outline: none;
@@ -60,9 +62,6 @@
 
 .mini_menu_btn {
   display: none;
-  position: absolute;
-  right: 4%;
-  top: 30%;
 }
 .hidden__header__right__wrapper{
   display: none;
@@ -74,7 +73,6 @@
     right: 4%;
     top: 30%;
     z-index: 99999;
-
     a {
       img {
         width: 30px;
@@ -92,7 +90,8 @@
     background-color: rgba(255, 255, 255, .1);
     backdrop-filter: blur(10px);
     z-index: 9999;
-
+    animation-name: mini__menu__run;
+    animation-duration: 0.5s;
     &__button:focus {
       outline: none;
     }
@@ -185,4 +184,21 @@
     }
 
   }
+  }
+
+  @keyframes mini__menu__run {
+    0% {
+      transform: translate(100%)
+    }
+    100% {
+      transform: translate(0%)
+    }
+  }
+  @keyframes close__mini__menu__run {
+    0% {
+      transform: translate(50%)
+    }
+    100% {
+      transform: translate(0%) 
+    }
   }

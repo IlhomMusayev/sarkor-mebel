@@ -12,6 +12,7 @@ function closeMenu () {
         document.getElementById('hidden-nav').style.cssText = 'display: none'
         document.querySelector('.mini_menu_btn').style.cssText = 'display: block'
         document.querySelector('.header__right').style.cssText = 'display: none'
+        document.querySelector('#hidden-nav').style.animationName = 'close__mini__menu__run'
         return;
     }
     document.getElementById('right-menu').style.cssText = 'display: block'
@@ -26,5 +27,5 @@ function openMiniMenu () {
     document.getElementById('hidden-nav').style.cssText = 'display: block'
     document.querySelector('.mini_menu_btn').style.cssText = 'display: none'
     document.querySelector('.header__right').style.cssText = 'display: none'
-
+    document.getElementById('hidden-nav').style.animationName = 'mini__menu__run'
 }
