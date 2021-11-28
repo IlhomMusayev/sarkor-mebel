@@ -3085,7 +3085,7 @@
     margin: 50px 0;
   }
   .about__me__main .container .about__farm .about__me__image img {
-    width: 370px;
+    width: 100%;
     height: 370px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -3413,6 +3413,176 @@
   height: 450px;
 }
 
+@media (max-width: 768px) {
+  .upholstery__section {
+    color: #FFFFFF;
+  }
+  .upholstery__section .upholstery__slider .upholstery__slider__item {
+    position: relative;
+  }
+  .upholstery__section .upholstery__slider .upholstery__slider__item .upholstery__content {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 100px;
+  }
+  .upholstery__section .upholstery__slider .upholstery__slider__item .upholstery__content .title {
+    margin-bottom: 30px;
+  }
+  .upholstery__section .upholstery__slider .upholstery__slider__item .upholstery__content .title h3 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 25px;
+  }
+  .upholstery__section .upholstery__slider .upholstery__slider__item .upholstery__content .content {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide {
+    width: 100%;
+    padding-bottom: 100px;
+    position: none;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide .splide__arrows .splide__arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #A67C52;
+    opacity: 1;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide .splide__arrows .splide__arrow svg {
+    fill: #FFFFFF;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide .splide__arrows .splide__arrow--next {
+    position: absolute;
+    top: 85%;
+    right: 35%;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide .splide__arrows .splide__arrow--prev {
+    position: absolute;
+    top: 85%;
+    left: 35%;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide .splide__slide {
+    margin-bottom: 50px;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide .splide__slide img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide3 {
+    width: 100%;
+    padding-bottom: 100px;
+    position: none;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__arrows .splide__arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #A67C52;
+    opacity: 1;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__arrows .splide__arrow svg {
+    fill: #FFFFFF;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__arrows .splide__arrow--next {
+    position: absolute;
+    top: 85%;
+    right: 35%;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__arrows .splide__arrow--prev {
+    position: absolute;
+    top: 85%;
+    left: 35%;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__slide {
+    margin-bottom: 50px;
+  }
+  .upholstery__section .upholstery__slider .upholstery__image .splide3 .splide__slide img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .wood__carving__section {
+    background-color: #09432B;
+    background-image: url("../../images/icons/Pattern.svg");
+    z-index: -1;
+    padding: 80px 0;
+  }
+  .wood__carving__section .wood__carving__slide {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__arrows .splide__arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #A67C52;
+    opacity: 1;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__arrows .splide__arrow svg {
+    fill: #FFFFFF;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__arrows .splide__arrow--prev {
+    position: absolute;
+    top: 100%;
+    left: 35%;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__arrows .splide__arrow--next {
+    position: absolute;
+    top: 100%;
+    right: 35%;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__content {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__content .sub__title h4 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 11px;
+    text-transform: uppercase;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__content .title {
+    width: 100%;
+    margin: 20px 0 30px 0;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__content .title h2 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__content .content {
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__images {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 50px;
+  }
+  .wood__carving__section .wood__carving__slide .splide2 .splide__slide .wood__carving__images img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .partner__section {
   color: #FFFFFF;
 }
@@ -3489,7 +3659,7 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
-    max-width: 94%;
+    max-width: 100%;
     width: 100%;
     height: 400px;
     background-color: #FFFFFF;

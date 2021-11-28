@@ -168,3 +168,184 @@
 
     }
 }
+
+@media (max-width: 768px) {
+    .upholstery__section {
+        color: $white-color;
+        .upholstery__slider {
+        
+        .upholstery__slider__item {
+            position: relative; 
+            .upholstery__content {
+                order: 1;
+                margin-top: 100px;
+                .title {
+                        margin-bottom: 30px;
+                        h3 {
+                            width: 100%;
+                            font-weight: bold;
+                            font-size: 26px;
+                            line-height: 25px;
+                        }
+                    }
+    
+                    .content {
+                        font-size: 16px;
+                        line-height: 24px;
+                        width: 100%;
+                    }
+                }
+            }
+            .upholstery__image {
+                order: 2;
+                .splide{
+                    width: 100%;
+                    padding-bottom: 100px;
+                    position: none;
+                    .splide__arrows{
+                        .splide__arrow{
+                            width: 40px;
+                            height: 40px;
+                            background-color: #A67C52;
+                            opacity: 1;
+                            svg{
+                                fill: $white-color;
+                            }
+                        }
+                        .splide__arrow--next{
+                            position: absolute;
+                            top: 85%;
+                            right: 35%;
+                        }
+                        .splide__arrow--prev{
+                            position: absolute;
+                            top: 85%;
+                            left: 35%;
+                        }
+                    }
+                    .splide__slide{
+                        margin-bottom: 50px;
+                        img{
+                            width: 100%;
+                            height: 500px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+    
+                .splide3{
+                    width: 100%;
+                    padding-bottom: 100px;
+                    position: none;
+                    .splide__arrows{
+                        .splide__arrow{
+                            width: 40px;
+                            height: 40px;
+                            background-color: #A67C52;
+                            opacity: 1;
+                            svg{
+                                fill: $white-color;
+                            }
+                        }
+                        .splide__arrow--next{
+                            position: absolute;
+                            top: 85%;
+                            right: 35%;
+                        }
+                        .splide__arrow--prev{
+                            position: absolute;
+                            top: 85%;
+                            left: 35%;
+                        }
+                    }
+                    .splide__slide{
+                        margin-bottom: 50px;
+                        img{
+                            width: 100%;
+                            height: 500px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+    
+    .wood__carving__section{
+        background-color: #09432B;
+        background-image: url("../../images/icons/Pattern.svg");
+        z-index: -1;
+        padding: 80px 0;
+        .wood__carving__slide{
+            position: relative;
+            width: 95%;
+            margin: 0 auto;
+    
+            .splide2{
+                .splide__arrows{
+                    .splide__arrow{
+                        width: 40px;
+                        height: 40px;
+                        background-color: #A67C52;
+                        opacity: 1;
+                        svg{
+                            fill: $white-color;
+                        }
+                    }
+                    .splide__arrow--prev{
+                        position: absolute;
+                        top: 100%;
+                        left: 35%;
+                    }
+                    .splide__arrow--next{
+                        position: absolute;
+                        top: 100%;
+                        right: 35%;
+                    }
+                }
+                .splide__slide{
+                    .wood__carving__content{
+                        order: 1;
+                        .sub__title{
+                            h4{
+                                font-weight: 300;
+                                font-size: 18px;
+                                line-height: 11px;
+                                text-transform: uppercase;
+                            }
+                        }
+                        .title{
+                            width: 100%;
+                            margin: 20px 0 30px 0;
+                            h2{
+                                font-weight: bold;
+                                font-size: 26px;
+                                line-height: 25px;
+                                text-transform: uppercase;
+                            }
+                        }
+                        .content{
+                            width: 100%;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+                    .wood__carving__images{
+                        order: 2;
+                        margin-bottom: 50px;
+                        img{
+                            width: 100%;
+                            height: 400px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    }
+}
