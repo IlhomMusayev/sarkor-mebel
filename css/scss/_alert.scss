@@ -1,0 +1,27 @@
+.alert{
+    position: fixed;
+    z-index: 999999;
+    top: 8%;
+    right: 10%;
+    width: 300px;
+    height: 70px;
+    background-color: #A67C52;
+    border-radius: 10px;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
+    display: none;
+    animation: alert-run 0.3s;
+}
+
+@keyframes alert-run {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0%);
+    }
+}

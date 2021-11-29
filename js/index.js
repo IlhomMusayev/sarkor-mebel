@@ -6,6 +6,7 @@ window.onload = function () {
     }, 2000);
 }
 
+// Menu
 function closeMenu () {
     if(window.screen.width < 768) {
         console.log('salom');
@@ -29,3 +30,15 @@ function openMiniMenu () {
     document.querySelector('.header__right').style.cssText = 'display: none'
     document.getElementById('hidden-nav').style.animationName = 'mini__menu__run'
 }
+// end Menu
+
+// Alert
+
+const addBtnElement = document.querySelector('.btn-add');
+const alertElement = document.querySelector('.alert');
+addBtnElement.addEventListener('click', function () {
+    alertElement.style.display = 'block';
+    setTimeout(function () {
+        alertElement.style.display = 'none';
+    }, 3000);
+})

@@ -4945,6 +4945,48 @@
   }
 }
 
+.alert {
+  position: fixed;
+  z-index: 999999;
+  top: 8%;
+  right: 10%;
+  width: 300px;
+  height: 70px;
+  background-color: #A67C52;
+  border-radius: 10px;
+  border: 1px solid #000;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  opacity: 0.8;
+  display: none;
+  -webkit-animation: alert-run 0.3s;
+          animation: alert-run 0.3s;
+}
+
+@-webkit-keyframes alert-run {
+  0% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+}
+
+@keyframes alert-run {
+  0% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+  100% {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+}
+
 body {
   overflow-x: hidden;
   background-color: #191919;
