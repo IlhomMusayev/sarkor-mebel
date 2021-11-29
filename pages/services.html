@@ -491,6 +491,7 @@
     </script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/accordion.js"></script>
     <script>
         let buttonPlus = document.querySelectorAll('.plusminus');
 
@@ -500,24 +501,6 @@
             })
         })
 
-        const accardionBody = document.querySelectorAll('.accordion-collapse')
-
-        const btnAccordion = document.querySelectorAll('.btn_accordion')
-
-        const plusMinusBtnElement =  document.querySelectorAll('.plusminus');
-        btnAccordion.forEach(element => {
-            element.addEventListener('click', (e) => {
-                if(e.target.getAttribute('aria-expanded') === 'true') {
-                    plusminusBtn = e.target.querySelector('.plusminus');
-                    plusminusBtn.classList.add('active')
-                    console.log(plusminusBtn);
-                    plusMinusBtnElement.forEach(element => {
-                        console.log(element.getAttribute('class'));
-                    })
-
-                }
-            })
-        })
     </script>
 
 </body>

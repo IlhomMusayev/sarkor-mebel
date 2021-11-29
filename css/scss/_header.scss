@@ -98,6 +98,16 @@
     }
   }
 }
+@media (max-width: 980px) {
+  .header {
+    &__nav{
+      display: none;
+    }
+    &__right {
+      display: none;
+    }
+}
+}
 
 @media (max-width: 768px) {
   .header__nav__list{
@@ -154,4 +164,5 @@
   .header__right__socials__item{
     margin: 0;
   }
+
 }

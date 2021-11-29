@@ -8,7 +8,7 @@ window.onload = function () {
 
 // Menu
 function closeMenu () {
-    if(window.screen.width < 768) {
+    if(window.screen.width < 990) {
         console.log('salom');
         document.getElementById('hidden-nav').style.cssText = 'display: none'
         document.querySelector('.mini_menu_btn').style.cssText = 'display: block'
@@ -36,9 +36,12 @@ function openMiniMenu () {
 
 const addBtnElement = document.querySelector('.btn-add');
 const alertElement = document.querySelector('.alert');
-addBtnElement.addEventListener('click', function () {
-    alertElement.style.display = 'block';
-    setTimeout(function () {
-        alertElement.style.display = 'none';
-    }, 3000);
-})
+if(addBtnElement) {
+    addBtnElement.addEventListener('click', function () {
+        alertElement.style.display = 'block';
+        setTimeout(function () {
+            alertElement.style.display = 'none';
+        }, 3000);
+    })
+    
+}

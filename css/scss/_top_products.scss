@@ -91,12 +91,11 @@
         max-width: 1120px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     .top__products__section{
         color: $white-color;
-        // position: relative;
         margin: 0px auto;
-        max-width: 1170px;
+        max-width: 750px;
         .container{
             padding: 0 10px;
         }
@@ -171,5 +170,12 @@
                 }
             }
         }
+    }
+}
+@media (max-width: 756px) {
+    .top__products__section{
+        color: $white-color;
+        margin: 0px auto;
+        max-width: 576px;
     }
 }

@@ -82,8 +82,8 @@
       height: 100%;
       &__image {
         background-color: $white-color;
-        width: 165px;
-        height: 225px;
+        width: 250px;
+        height: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -160,6 +160,27 @@
     }
     &__button:hover {
       color: $white-color;
+    }
+  }
+}
+
+@media (max-width: 498px) {
+  .recommend {
+    &__card {
+      &__image {
+        width: 200px;
+        height: 225px;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .recommend {
+    &__card {
+      &__image {
+        width: 165px;
+        height: 225px;
+      }
     }
   }
 }

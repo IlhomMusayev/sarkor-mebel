@@ -15,10 +15,11 @@
   height: 50px;
   display: block;
   position: absolute;
-  bottom: 36px;
+  bottom: 10px;
   left: 50%;
   z-index: 100;
   text-align: center;
+  cursor: pointer;
   a {
     display: block;
     height: 100%;
@@ -30,7 +31,7 @@
     height: 100vh;
     &__caption {
       position: absolute;
-      left: 230px;
+      left: 150px;
       bottom: 1.25rem;
       top: 50%;
       width: 570px;
@@ -68,18 +69,43 @@
       img {
         height: 100%;
         z-index: -2;
+        width: 100%;
       }
     }
     &__controller {
       &__wrapper {
         display: block;
         position: absolute;
-        top: 90%;
-        left: 100px;
+        bottom: 10px;
+        left: 50px;
         z-index: 100;
         .btn:focus {
           outline: none;
           box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .s__home {
+    .carousel {
+      height: 100vh;
+      &__caption {
+        left: 80px;
+      }
+      &__controller {
+        &__wrapper {
+          display: block;
+          position: absolute;
+          top: 90%;
+          left: 70px;
+          z-index: 100;
+          .btn:focus {
+            outline: none;
+            box-shadow: none;
+          }
         }
       }
     }
@@ -102,7 +128,7 @@
     height: 50px;
     display: block;
     position: absolute;
-    bottom: 10px;
+    bottom: 50px;
     left: 85%;
     z-index: 2;
     text-align: center;
