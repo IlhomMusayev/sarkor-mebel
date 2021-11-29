@@ -22,7 +22,7 @@ function countTotalProduct(){
     priceProductElement.forEach(function(item) {
         allProductPrice = allProductPrice + parseInt(item.textContent.split(',').join(''))
     })
-    document.querySelector('.total-price').textContent = new Intl.NumberFormat('uz-Uz', { currency: 'UZS' }).format(allProductPrice)
+    document.querySelector('.total-price').textContent = new Intl.NumberFormat('uz-Uz', { currency: 'UZS' }).format(allProductPrice) + " sum"
     document.querySelector('.total-product-count').textContent = allProductCount + " товар(ов)"
 }
 
@@ -38,6 +38,8 @@ plusBtnElement.forEach(function(item, i) {
         else {
             alert("0 tadan kam mahsulat buyutma bera olmaysiz")
             e.target.parentNode.querySelector('.count').value = 1;
+            countProduct(e)
+            countTotalProduct()
         }
     })
 })
@@ -51,6 +53,8 @@ minusBtnElement.forEach(function(item, i) {
         else{
             alert("0 tadan kam mahsulat buyutma bera olmaysiz")
             e.target.parentNode.querySelector('.count').value = 1;
+            countProduct(e)
+            countTotalProduct()
         }
     })
 })

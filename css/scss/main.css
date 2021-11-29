@@ -1552,6 +1552,41 @@
           justify-content: center;
 }
 
+.basket__product__count .cart__count {
+  border-radius: 5px;
+  border: 2px solid #363636;
+  margin-left: 0;
+}
+
+.basket__product__count .cart__count button {
+  background: #121212 url("../../images/icons/arrow-lefr.svg") no-repeat;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  border: none;
+  color: #FFFFFF;
+  width: 30px;
+  height: 45px;
+}
+
+.basket__product__count .cart__count input {
+  border: none;
+  color: #FFFFFF;
+  background: #121212;
+  padding: 12px 5px;
+  width: 45px;
+  text-align: center;
+}
+
+.basket__product__count .cart__count .plus {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.basket__product__count .cart__count .plus img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .basket__product__price {
   text-align: right;
   display: -webkit-box;
@@ -2056,6 +2091,7 @@
 }
 
 .product__content .product__about .product__content__about .product__add__cart__section .cart__count__section .title {
+  margin-right: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

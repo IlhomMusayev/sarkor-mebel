@@ -61,6 +61,38 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      .cart__count {
+        border-radius: 5px;
+        border: 2px solid #363636;
+        margin-left: 0;
+
+        button {
+            background: #121212 url('../../images/icons/arrow-lefr.svg') no-repeat;
+            background-position-y: 50%;
+            background-position-x: 50%;
+            border: none;
+            color: $white-color;
+            width: 30px;
+            height: 45px;
+        }
+
+
+        input {
+            border: none;
+            color: $white-color;
+            background: #121212;
+            padding: 12px 5px;
+            width: 45px;
+            text-align: center;
+        }
+
+        .plus {
+          transform: rotate(180deg);
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    }
     }
     &__price {
       text-align: right;
