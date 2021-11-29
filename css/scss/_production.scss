@@ -169,7 +169,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     .upholstery__section {
         color: $white-color;
         .upholstery__slider {
@@ -178,7 +178,7 @@
             position: relative; 
             .upholstery__content {
                 order: 1;
-                margin-top: 100px;
+                margin-top: 50px;
                 .title {
                         margin-bottom: 30px;
                         h3 {
